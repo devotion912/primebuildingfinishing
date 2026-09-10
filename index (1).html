@@ -1,0 +1,3926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Prime Building Finishing — Luxury doors, security doors, and premium home finishing in Lagos, Nigeria. Quality doors, premium finishing. Nationwide delivery.">
+<meta name="keywords" content="luxury doors Nigeria, security doors Lagos, interior doors, wooden doors, pivot doors, home finishing Nigeria, Prime Building Finishing">
+<meta property="og:title" content="Prime Building Finishing | Luxury Doors & Premium Home Finishing">
+<meta property="og:description" content="Luxury doors and premium home finishing crafted for Nigerian homes. Nationwide delivery from Lagos.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_NG">
+<meta name="theme-color" content="#1A1512">
+<title>Prime Building Finishing | Luxury Doors & Premium Home Finishing in Nigeria</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   PRIME BUILDING FINISHING — Luxury Doors
+   Design system: Dark Gold Brown / Cream / Ivory
+   ============================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* Brand colors — Luxury Golden Brown from Prime Building Finishing Logo */
+  --color-dark:        #3D2D1F;   /* very dark warm brown */
+  --color-dark-2:      #4A3A2A;   /* dark warm brown */
+  --color-brown:       #8B6F47;   /* luxurious golden brown/bronze */
+  --color-brown-2:     #9B7D52;   /* medium golden brown */
+  --color-gold:        #D4A574;   /* rich luminous gold — PRIMARY ACCENT */
+  --color-gold-light:  #E8C89A;   /* light luminous gold */
+  --color-gold-dark:   #C99863;   /* deep golden brown */
+  --color-cream:       #E8D4A8;   /* luxurious golden cream background */
+  --color-cream-2:     #DCC9A0;   /* deeper golden cream */
+  --color-ivory:       #F0E6D8;   /* section bg — luxury golden tone */
+  --color-white:       #F9F4ED;   /* base bg — champagne luxury */
+  --color-text:        #3D2D1F;
+  --color-text-muted:  #7A6955;
+  --color-text-light:  #A89880;
+  --color-border:      #E8DCC8;
+  --color-border-dark: rgba(212, 165, 116, 0.25);
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans:  'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(26, 21, 18, 0.06);
+  --shadow-md: 0 8px 32px rgba(26, 21, 18, 0.08);
+  --shadow-lg: 0 24px 60px rgba(26, 21, 18, 0.15);
+  --shadow-gold: 0 8px 32px rgba(176, 141, 87, 0.25);
+
+  /* Spacing */
+  --container: 1360px;
+  --nav-h: 76px;
+  --announce-h: 40px;
+
+  /* Motion */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur: 0.5s;
+}
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--color-text);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+body.no-scroll { overflow: hidden; }
+
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; transition: color .3s var(--ease); }
+button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+input, textarea, select { font-family: inherit; font-size: inherit; color: inherit; }
+ul { list-style: none; }
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  line-height: 1.1;
+  color: var(--color-dark);
+  letter-spacing: -0.015em;
+}
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  display: inline-block;
+}
+.eyebrow--light { color: var(--color-gold-light); }
+.section-title {
+  font-size: clamp(2rem, 4.5vw, 3.75rem);
+  font-weight: 500;
+  margin: 14px 0 18px;
+}
+.section-sub {
+  font-size: 16px;
+  color: var(--color-text-muted);
+  max-width: 620px;
+  line-height: 1.7;
+}
+.center { text-align: center; margin-left: auto; margin-right: auto; }
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 clamp(20px, 4vw, 60px);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 34px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  transition: all .4s var(--ease);
+  white-space: nowrap;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.btn--primary {
+  background: var(--color-gold);
+  color: var(--color-white);
+}
+.btn--primary:hover {
+  background: var(--color-gold-dark);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-gold);
+}
+.btn--dark {
+  background: var(--color-dark);
+  color: var(--color-white);
+  border-color: var(--color-dark);
+}
+.btn--dark:hover {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+}
+.btn--outline {
+  background: transparent;
+  color: var(--color-dark);
+  border-color: var(--color-dark);
+}
+.btn--outline:hover {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+.btn--outline-light {
+  background: transparent;
+  color: var(--color-white);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.btn--outline-light:hover {
+  background: var(--color-white);
+  color: var(--color-dark);
+  border-color: var(--color-white);
+}
+.btn--ghost {
+  padding: 10px 0;
+  color: var(--color-dark);
+  border-bottom: 1px solid var(--color-gold);
+  border-radius: 0;
+}
+.btn--ghost:hover { color: var(--color-gold); }
+.btn svg { width: 14px; height: 14px; }
+
+/* Announcement bar */
+.announce {
+  background: var(--color-dark);
+  color: var(--color-cream);
+  height: var(--announce-h);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  overflow: hidden;
+  position: relative;
+}
+.announce span { padding: 0 20px; }
+.announce .dot { color: var(--color-gold); }
+
+/* Header */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(254, 252, 247, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: border-color .3s var(--ease), box-shadow .3s var(--ease);
+}
+.header.scrolled {
+  border-bottom-color: var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+.header__inner {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  height: var(--nav-h);
+  gap: 30px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand__logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .4s var(--ease);
+  overflow: hidden;
+}
+.brand__logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+.brand:hover .brand__logo { transform: scale(1.08); }
+.brand__text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+.brand__name {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  color: var(--color-dark);
+  text-transform: uppercase;
+}
+.brand__tag {
+  font-size: 9px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-top: 3px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  justify-self: center;
+}
+.nav a {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  position: relative;
+  padding: 8px 0;
+}
+.nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background: var(--color-gold);
+  transition: all .3s var(--ease);
+  transform: translateX(-50%);
+}
+.nav a:hover, .nav a.active {
+  color: var(--color-gold);
+}
+.nav a:hover::after, .nav a.active::after {
+  width: 100%;
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-self: end;
+}
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-dark);
+  position: relative;
+  transition: color .3s var(--ease);
+}
+.icon-btn:hover { color: var(--color-gold); }
+.icon-btn svg { width: 20px; height: 20px; }
+.icon-btn__badge {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  background: var(--color-gold);
+  color: var(--color-white);
+  border-radius: 9px;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: transform .3s var(--ease);
+}
+.icon-btn__badge.show { transform: scale(1); }
+.hamburger { display: none; }
+
+/* ============ HERO ============ */
+.hero {
+  position: relative;
+  background: var(--color-dark);
+  color: var(--color-cream);
+  overflow: hidden;
+  min-height: calc(100vh - var(--nav-h) - var(--announce-h));
+  display: flex;
+  align-items: center;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 40%, rgba(212, 165, 116, 0.2), transparent 60%),
+    radial-gradient(ellipse at 80% 80%, rgba(212, 165, 116, 0.1), transparent 50%);
+  pointer-events: none;
+}
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 80px;
+  align-items: center;
+  padding: 80px 0;
+  position: relative;
+  z-index: 2;
+}
+.hero__text .eyebrow {
+  color: var(--color-gold-light);
+}
+.hero__title {
+  font-size: clamp(2.75rem, 6.5vw, 5.5rem);
+  font-weight: 400;
+  color: var(--color-white);
+  line-height: 1.02;
+  margin: 22px 0 28px;
+  letter-spacing: -0.02em;
+}
+.hero__title em {
+  font-style: italic;
+  color: var(--color-gold-light);
+  font-weight: 400;
+}
+.hero__desc {
+  font-size: 17px;
+  line-height: 1.7;
+  color: rgba(240, 230, 210, 0.75);
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+.hero__cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.hero__meta {
+  display: flex;
+  gap: 50px;
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(176, 141, 87, 0.2);
+}
+.hero__meta-item .num {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--color-gold-light);
+  display: block;
+}
+.hero__meta-item .lbl {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(240, 230, 210, 0.6);
+  margin-top: 4px;
+}
+
+/* Hero visual — architectural door composition */
+.hero__visual {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  max-height: 640px;
+  justify-self: end;
+  width: 100%;
+}
+.hero__visual-frame {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(176, 141, 87, 0.3);
+}
+.hero__visual-frame::before, .hero__visual-frame::after {
+  content: '';
+  position: absolute;
+  background: var(--color-gold);
+}
+.hero__visual-frame::before { top: -1px; left: -1px; width: 30px; height: 1px; }
+.hero__visual-frame::after { top: -1px; left: -1px; width: 1px; height: 30px; }
+.hero__visual-inner {
+  position: absolute;
+  inset: 30px;
+  overflow: hidden;
+  background:
+    linear-gradient(160deg, #3d2e24 0%, #1a1512 100%);
+}
+.hero__door {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 78%;
+  height: 92%;
+  background:
+    linear-gradient(180deg,
+      #4a3a2d 0%,
+      #3d2e24 30%,
+      #2a1f18 100%);
+  box-shadow:
+    inset 0 0 60px rgba(0,0,0,0.4),
+    -20px 30px 60px rgba(0,0,0,0.5);
+}
+.hero__door::before {
+  content: '';
+  position: absolute;
+  inset: 8% 12%;
+  border: 1px solid rgba(176, 141, 87, 0.35);
+}
+.hero__door::after {
+  content: '';
+  position: absolute;
+  inset: 15% 20%;
+  border: 1px solid rgba(176, 141, 87, 0.25);
+}
+.hero__door-handle {
+  position: absolute;
+  right: 6%;
+  top: 48%;
+  width: 12px;
+  height: 60px;
+  background: linear-gradient(180deg, var(--color-gold-light), var(--color-gold-dark));
+  border-radius: 2px;
+  box-shadow: 0 0 20px rgba(176, 141, 87, 0.5);
+}
+.hero__light {
+  position: absolute;
+  top: 0;
+  left: -20%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(115deg, transparent 40%, rgba(212, 181, 132, 0.15) 50%, transparent 60%);
+  pointer-events: none;
+}
+.hero__floor {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20%;
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,0.5));
+}
+.hero__badge {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  padding: 12px 20px;
+  background: rgba(26, 21, 18, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold-light);
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  z-index: 3;
+}
+
+/* ============ SECTIONS ============ */
+section { padding: clamp(60px, 10vw, 120px) 0; }
+
+.section-head {
+  text-align: center;
+  margin-bottom: 60px;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-head--left {
+  text-align: left;
+  margin-left: 0;
+  max-width: 100%;
+}
+
+/* Category cards */
+.categories {
+  background: var(--color-ivory);
+}
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.cat-card {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--color-brown);
+  transition: transform .5s var(--ease);
+}
+.cat-card:hover { transform: translateY(-6px); }
+.cat-card__bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.cat-card__bg svg { width: 100%; height: 100%; }
+.cat-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(26, 21, 18, 0.85) 100%);
+}
+.cat-card__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 30px 26px;
+  color: var(--color-white);
+  z-index: 2;
+}
+.cat-card__label {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+  margin-bottom: 8px;
+}
+.cat-card__title {
+  font-family: var(--font-serif);
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-white);
+  margin-bottom: 6px;
+}
+.cat-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-cream);
+  margin-top: 14px;
+  opacity: 0.9;
+  transition: gap .3s var(--ease);
+}
+.cat-card:hover .cat-card__link { gap: 14px; }
+
+/* Products grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+.product-card {
+  cursor: pointer;
+  background: transparent;
+  transition: transform .4s var(--ease);
+}
+.product-card__img {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background: var(--color-ivory);
+  overflow: hidden;
+  margin-bottom: 20px;
+  transition: box-shadow .4s var(--ease);
+}
+.product-card:hover .product-card__img {
+  box-shadow: var(--shadow-md);
+}
+.product-card__img svg {
+  width: 100%;
+  height: 100%;
+  transition: transform .7s var(--ease);
+}
+.product-card:hover .product-card__img svg {
+  transform: scale(1.04);
+}
+.product-card__tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: var(--color-dark);
+  color: var(--color-cream);
+  padding: 6px 12px;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.product-card__tag--gold { background: var(--color-gold); color: var(--color-white); }
+.product-card__quick {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 14px;
+  background: rgba(26, 21, 18, 0.92);
+  color: var(--color-white);
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  transform: translateY(100%);
+  transition: transform .4s var(--ease);
+}
+.product-card:hover .product-card__quick {
+  transform: translateY(0);
+}
+.product-card__cat {
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 8px;
+}
+.product-card__name {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-dark);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+.product-card__price {
+  font-family: var(--font-sans);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--color-brown);
+}
+
+/* Story section */
+.story {
+  background: var(--color-white);
+}
+.story__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 90px;
+  align-items: center;
+}
+.story__visual {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  background: var(--color-cream);
+  overflow: hidden;
+}
+.story__visual::before {
+  content: '';
+  position: absolute;
+  inset: 20px;
+  border: 1px solid var(--color-gold);
+  z-index: 2;
+  pointer-events: none;
+}
+.story__visual-inner {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, #5c4633 0%, #3d2e24 60%, #2a1f18 100%);
+  overflow: hidden;
+}
+.story__door {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 65%;
+  height: 90%;
+  background: linear-gradient(180deg, #6b5340 0%, #4a3a2d 100%);
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.35);
+}
+.story__door::before {
+  content: '';
+  position: absolute;
+  top: 8%;
+  left: 12%;
+  right: 12%;
+  bottom: 55%;
+  border: 1px solid rgba(212, 181, 132, 0.4);
+}
+.story__door::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  right: 12%;
+  bottom: 8%;
+  border: 1px solid rgba(212, 181, 132, 0.4);
+}
+.story__accent {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  width: 180px;
+  height: 180px;
+  background: var(--color-gold);
+  opacity: 0.15;
+  z-index: -1;
+}
+.story__text .section-title { margin-bottom: 24px; }
+.story__text p {
+  color: var(--color-text-muted);
+  font-size: 16px;
+  line-height: 1.85;
+  margin-bottom: 20px;
+}
+.story__signature {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--color-brown);
+  margin: 30px 0;
+}
+
+/* Why choose */
+.why {
+  background: var(--color-ivory);
+}
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+.why-item {
+  text-align: center;
+  padding: 20px;
+}
+.why-item__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 24px;
+  border: 1px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  transition: all .4s var(--ease);
+}
+.why-item:hover .why-item__icon {
+  background: var(--color-gold);
+  color: var(--color-white);
+  transform: rotate(-6deg);
+}
+.why-item__icon svg { width: 28px; height: 28px; }
+.why-item h3 {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: var(--color-dark);
+}
+.why-item p {
+  color: var(--color-text-muted);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* Projects showcase */
+.projects {
+  background: var(--color-white);
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.project-card {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--color-brown);
+  cursor: pointer;
+}
+.project-card__bg { position: absolute; inset: 0; }
+.project-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 30%, rgba(26, 21, 18, 0.9) 100%);
+  transition: background .4s var(--ease);
+}
+.project-card:hover .project-card__overlay {
+  background: linear-gradient(180deg, rgba(26, 21, 18, 0.3) 0%, rgba(26, 21, 18, 0.92) 100%);
+}
+.project-card__content {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  right: 30px;
+  color: var(--color-white);
+}
+.project-card__loc {
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+  margin-bottom: 8px;
+}
+.project-card__title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-white);
+}
+
+/* Consultation / Contact CTA */
+.consultation {
+  background: var(--color-dark);
+  color: var(--color-cream);
+  position: relative;
+  overflow: hidden;
+}
+.consultation::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(212, 165, 116, 0.15), transparent 70%);
+}
+.consultation__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+}
+.consultation h2 {
+  color: var(--color-white);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  margin-bottom: 24px;
+}
+.consultation p {
+  color: rgba(240, 230, 210, 0.75);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+.consultation__form {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(176, 141, 87, 0.25);
+  padding: 40px;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.form-field { margin-bottom: 16px; }
+.form-field input,
+.form-field textarea,
+.form-field select {
+  width: 100%;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(176, 141, 87, 0.2);
+  color: var(--color-white);
+  font-size: 14px;
+  transition: border-color .3s var(--ease);
+}
+.form-field input:focus,
+.form-field textarea:focus,
+.form-field select:focus {
+  outline: none;
+  border-color: var(--color-gold);
+}
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: rgba(240, 230, 210, 0.4);
+}
+.form-field select { appearance: none; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path fill='%23B08D57' d='M6 8L2 4h8z'/></svg>"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; }
+.form-field textarea { min-height: 100px; resize: vertical; }
+.consultation__contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 40px;
+}
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+.contact-item__icon {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+  flex-shrink: 0;
+}
+.contact-item__icon svg { width: 18px; height: 18px; }
+.contact-item__label {
+  font-size: 10px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+  margin-bottom: 4px;
+}
+.contact-item__value {
+  color: var(--color-cream);
+  font-size: 15px;
+}
+.contact-item__value a:hover { color: var(--color-gold-light); }
+
+/* Testimonials */
+.testimonials {
+  background: var(--color-ivory);
+}
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.testi-card {
+  background: var(--color-white);
+  padding: 40px 34px;
+  border: 1px solid var(--color-border);
+  position: relative;
+}
+.testi-card::before {
+  content: '"';
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-family: var(--font-serif);
+  font-size: 90px;
+  color: var(--color-gold);
+  opacity: 0.2;
+  line-height: 1;
+}
+.testi-card__stars {
+  color: var(--color-gold);
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+.testi-card__text {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-style: italic;
+  color: var(--color-dark);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+.testi-card__author {
+  padding-top: 20px;
+  border-top: 1px solid var(--color-border);
+}
+.testi-card__name {
+  font-weight: 600;
+  color: var(--color-dark);
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+.testi-card__role {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.05em;
+}
+
+/* Final CTA */
+.final-cta {
+  background: var(--color-dark);
+  color: var(--color-cream);
+  text-align: center;
+  padding: clamp(80px, 12vw, 140px) 0;
+  position: relative;
+  overflow: hidden;
+}
+.final-cta::before, .final-cta::after {
+  content: '';
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(212, 165, 116, 0.15), transparent 70%);
+  pointer-events: none;
+}
+.final-cta::before { top: -200px; left: -100px; }
+.final-cta::after { bottom: -200px; right: -100px; }
+.final-cta__inner { position: relative; z-index: 2; max-width: 780px; margin: 0 auto; }
+.final-cta h2 {
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  color: var(--color-white);
+  margin: 20px 0 22px;
+  font-weight: 400;
+}
+.final-cta h2 em { font-style: italic; color: var(--color-gold-light); }
+.final-cta p {
+  color: rgba(240, 230, 210, 0.7);
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 40px;
+}
+.final-cta__buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ============ FOOTER ============ */
+.footer {
+  background: #4A3A2A;
+  color: var(--color-cream);
+  padding: 80px 0 30px;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+.footer__brand .brand__name { color: var(--color-white); }
+.footer__brand p {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 17px;
+  color: rgba(240, 230, 210, 0.7);
+  line-height: 1.6;
+  margin-top: 24px;
+  max-width: 320px;
+}
+.footer__social {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+.footer__social a {
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(176, 141, 87, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold-light);
+  transition: all .3s var(--ease);
+}
+.footer__social a:hover {
+  background: var(--color-gold);
+  color: var(--color-white);
+  border-color: var(--color-gold);
+}
+.footer__social svg { width: 16px; height: 16px; }
+.footer__col h4 {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-gold-light);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.footer__col ul li { margin-bottom: 12px; }
+.footer__col a {
+  color: rgba(240, 230, 210, 0.65);
+  font-size: 14px;
+  transition: color .3s var(--ease);
+}
+.footer__col a:hover { color: var(--color-gold-light); }
+.footer__bottom {
+  padding-top: 30px;
+  border-top: 1px solid rgba(176, 141, 87, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 12px;
+  color: rgba(240, 230, 210, 0.5);
+  letter-spacing: 0.05em;
+}
+.footer__bottom-links { display: flex; gap: 24px; }
+
+/* ============ WHATSAPP FLOAT ============ */
+.wa-float {
+  position: fixed;
+  bottom: 26px;
+  right: 26px;
+  z-index: 90;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+  transition: transform .3s var(--ease);
+  animation: wa-pulse 2s infinite;
+}
+.wa-float:hover { transform: scale(1.08); }
+.wa-float svg { width: 30px; height: 30px; }
+@keyframes wa-pulse {
+  0%, 100% { box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4), 0 0 0 0 rgba(37, 211, 102, 0.6); }
+  50% { box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4), 0 0 0 15px rgba(37, 211, 102, 0); }
+}
+
+/* ============ CART DRAWER ============ */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 20, 16, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s var(--ease), visibility .3s var(--ease);
+}
+.overlay.open { opacity: 1; visibility: visible; }
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 440px;
+  background: var(--color-white);
+  z-index: 210;
+  transform: translateX(100%);
+  transition: transform .5s var(--ease);
+  display: flex;
+  flex-direction: column;
+}
+.drawer.open { transform: translateX(0); }
+.drawer__head {
+  padding: 24px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+}
+.drawer__title {
+  font-family: var(--font-serif);
+  font-size: 22px;
+  font-weight: 500;
+}
+.drawer__close {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drawer__close:hover { color: var(--color-gold); }
+.drawer__body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 30px;
+}
+.drawer__empty {
+  text-align: center;
+  padding: 60px 20px;
+}
+.drawer__empty svg {
+  width: 60px;
+  height: 60px;
+  color: var(--color-border);
+  margin: 0 auto 20px;
+}
+.drawer__empty p {
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+.cart-item {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: flex-start;
+}
+.cart-item__img {
+  width: 80px;
+  height: 100px;
+  background: var(--color-ivory);
+  overflow: hidden;
+}
+.cart-item__img svg { width: 100%; height: 100%; }
+.cart-item__name {
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+.cart-item__price {
+  font-size: 14px;
+  color: var(--color-brown);
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.cart-item__qty {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--color-border);
+  margin-bottom: 8px;
+}
+.cart-item__qty button {
+  width: 28px;
+  height: 28px;
+  font-size: 16px;
+  color: var(--color-text-muted);
+}
+.cart-item__qty button:hover { color: var(--color-gold); }
+.cart-item__qty span {
+  min-width: 28px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+}
+.cart-item__remove {
+  color: var(--color-text-light);
+  font-size: 12px;
+  align-self: flex-start;
+}
+.cart-item__remove:hover { color: var(--color-gold); }
+
+/* Checkout form styles */
+.checkout-form {
+  display: none;
+  padding: 0 30px;
+}
+.checkout-form.show {
+  display: block;
+}
+.checkout-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+.checkout-form .form-row-full {
+  display: block;
+  margin-bottom: 14px;
+}
+.checkout-form .form-field {
+  margin-bottom: 0;
+}
+.checkout-form .form-field input,
+.checkout-form .form-field textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--color-ivory);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-size: 13px;
+  border-radius: 4px;
+  font-family: inherit;
+  transition: border-color .3s var(--ease);
+}
+.checkout-form .form-field input:focus,
+.checkout-form .form-field textarea:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  background: var(--color-white);
+}
+.checkout-form .form-field input::placeholder,
+.checkout-form .form-field textarea::placeholder {
+  color: var(--color-text-light);
+}
+.checkout-form .form-field textarea {
+  min-height: 70px;
+  resize: vertical;
+}
+.checkout-form .form-field label {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 6px;
+}
+.checkout-form .form-field.required label::after {
+  content: ' *';
+  color: #c44;
+}
+.form-error {
+  color: #c44;
+  font-size: 12px;
+  margin-top: 4px;
+  display: none;
+}
+.form-error.show { display: block; }
+
+.drawer__foot {
+  padding: 24px 30px;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-ivory);
+}
+.drawer__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.drawer__total span { font-size: 13px; color: var(--color-text-muted); letter-spacing: 0.1em; text-transform: uppercase; }
+.drawer__total strong { font-family: var(--font-serif); font-size: 22px; color: var(--color-dark); }
+.drawer__note {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.drawer__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.drawer__actions .btn { width: 100%; }
+
+/* ============ SEARCH OVERLAY ============ */
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26, 21, 18, 0.95);
+  backdrop-filter: blur(8px);
+  z-index: 220;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .3s var(--ease), visibility .3s var(--ease);
+  padding: 100px 20px 40px;
+  overflow-y: auto;
+}
+.search-overlay.open { opacity: 1; visibility: visible; }
+.search-overlay__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 44px;
+  height: 44px;
+  color: var(--color-cream);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-overlay__close:hover { color: var(--color-gold); }
+.search-overlay__inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.search-overlay__label {
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  color: var(--color-gold-light);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.search-input-wrap {
+  border-bottom: 1px solid var(--color-gold);
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.search-input-wrap svg { color: var(--color-gold); width: 24px; height: 24px; flex-shrink: 0; }
+.search-input-wrap input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--color-white);
+  font-family: var(--font-serif);
+  font-size: clamp(20px, 4vw, 32px);
+  padding: 12px 0;
+  outline: none;
+}
+.search-input-wrap input::placeholder { color: rgba(240, 230, 210, 0.4); }
+.search-results { margin-top: 40px; }
+.search-results__title {
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  color: var(--color-gold-light);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.search-result {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(176, 141, 87, 0.15);
+  color: var(--color-cream);
+  cursor: pointer;
+  transition: padding-left .3s var(--ease);
+}
+.search-result:hover { padding-left: 12px; }
+.search-result__img { width: 60px; height: 75px; background: rgba(255,255,255,0.05); }
+.search-result__img svg { width: 100%; height: 100%; }
+.search-result__name {
+  font-family: var(--font-serif);
+  font-size: 18px;
+  color: var(--color-white);
+}
+.search-result__cat {
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+  margin-top: 4px;
+}
+.search-result__price {
+  color: var(--color-gold-light);
+  font-size: 14px;
+}
+.search-empty {
+  color: rgba(240, 230, 210, 0.5);
+  text-align: center;
+  padding: 30px 0;
+  font-style: italic;
+}
+
+/* ============ MOBILE MENU ============ */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 380px;
+  background: var(--color-white);
+  z-index: 210;
+  transform: translateX(-100%);
+  transition: transform .5s var(--ease);
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu.open { transform: translateX(0); }
+.mobile-menu__head {
+  padding: 24px 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--color-border);
+}
+.mobile-menu__body { flex: 1; padding: 20px 0; overflow-y: auto; }
+.mobile-menu__nav a {
+  display: block;
+  padding: 16px 26px;
+  font-family: var(--font-serif);
+  font-size: 22px;
+  color: var(--color-dark);
+  border-bottom: 1px solid var(--color-border);
+  transition: all .3s var(--ease);
+}
+.mobile-menu__nav a:hover, .mobile-menu__nav a.active {
+  color: var(--color-gold);
+  padding-left: 34px;
+  background: var(--color-ivory);
+}
+.mobile-menu__foot {
+  padding: 24px 26px;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-ivory);
+}
+.mobile-menu__foot h4 {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 16px;
+}
+.mobile-menu__foot p {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  margin-bottom: 6px;
+}
+.mobile-menu__foot a { color: var(--color-dark); font-weight: 500; }
+.mobile-menu__social {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.mobile-menu__social a {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold);
+}
+
+/* ============ TOAST ============ */
+.toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(120%);
+  background: var(--color-dark);
+  color: var(--color-cream);
+  padding: 16px 26px;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  border-left: 3px solid var(--color-gold);
+  transition: transform .4s var(--ease);
+  min-width: 280px;
+  box-shadow: var(--shadow-lg);
+}
+.toast.show { transform: translateX(-50%) translateY(0); }
+.toast svg { width: 20px; height: 20px; color: var(--color-gold-light); }
+.toast span { font-size: 13px; letter-spacing: 0.02em; }
+
+/* ============ SUB-PAGES (Shop, About, etc) ============ */
+.page-header {
+  background: var(--color-ivory);
+  padding: 80px 0 60px;
+  text-align: center;
+}
+.page-header .eyebrow { color: var(--color-gold); }
+.page-header h1 {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  margin: 16px 0 12px;
+  font-weight: 500;
+}
+.page-header p {
+  color: var(--color-text-muted);
+  max-width: 620px;
+  margin: 0 auto;
+}
+.breadcrumb {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-text-light);
+}
+.breadcrumb a:hover { color: var(--color-gold); }
+.breadcrumb .sep { color: var(--color-gold); }
+
+/* Shop layout */
+.shop-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 50px;
+  padding: 60px 0 100px;
+}
+.shop-filters h4 {
+  font-family: var(--font-sans);
+  font-size: 11px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 18px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--color-border);
+}
+.filter-group { margin-bottom: 34px; }
+.filter-group ul li {
+  padding: 8px 0;
+  cursor: pointer;
+  color: var(--color-text);
+  font-size: 14px;
+  transition: color .3s var(--ease);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-group ul li:hover, .filter-group ul li.active {
+  color: var(--color-gold);
+}
+.filter-group ul li .count {
+  font-size: 12px;
+  color: var(--color-text-light);
+}
+.shop-main__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+.shop-main__count { color: var(--color-text-muted); font-size: 14px; }
+.shop-main__sort select {
+  padding: 10px 40px 10px 16px;
+  border: 1px solid var(--color-border);
+  background: var(--color-white);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path fill='%231A1512' d='M6 8L2 4h8z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
+
+/* Product detail */
+.pdp {
+  padding: 60px 0 100px;
+}
+.pdp-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 70px;
+  align-items: start;
+}
+.pdp__gallery {
+  position: sticky;
+  top: 120px;
+}
+.pdp__main-img {
+  aspect-ratio: 3 / 4;
+  background: var(--color-ivory);
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.pdp__main-img svg { width: 100%; height: 100%; }
+.pdp__thumbs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.pdp__thumb {
+  aspect-ratio: 1;
+  background: var(--color-ivory);
+  cursor: pointer;
+  border: 2px solid transparent;
+  overflow: hidden;
+  transition: border-color .3s var(--ease);
+}
+.pdp__thumb.active { border-color: var(--color-gold); }
+.pdp__thumb svg { width: 100%; height: 100%; }
+.pdp__cat {
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.pdp__name {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 500;
+  color: var(--color-dark);
+  margin-bottom: 16px;
+}
+.pdp__price {
+  font-family: var(--font-serif);
+  font-size: 28px;
+  color: var(--color-brown);
+  margin-bottom: 8px;
+}
+.pdp__stock {
+  color: #2c8a4a;
+  font-size: 13px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.pdp__stock::before { content: ''; width: 8px; height: 8px; background: #2c8a4a; border-radius: 50%; }
+.pdp__desc {
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin-bottom: 30px;
+  padding: 30px 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+.pdp__specs {
+  margin-bottom: 30px;
+}
+.pdp__specs h4 {
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 14px;
+}
+.pdp__specs ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.pdp__specs ul li strong { font-weight: 500; color: var(--color-dark); }
+.pdp__specs ul li span { color: var(--color-text-muted); }
+.pdp__actions {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  align-items: stretch;
+}
+.pdp__qty {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--color-dark);
+}
+.pdp__qty button {
+  width: 46px;
+  height: 100%;
+  min-height: 52px;
+  font-size: 18px;
+}
+.pdp__qty span {
+  min-width: 40px;
+  text-align: center;
+  font-weight: 500;
+}
+.pdp__actions .btn { flex: 1; }
+.pdp__wa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 20px;
+  background: #25D366;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 100%;
+  justify-content: center;
+  transition: background .3s var(--ease);
+}
+.pdp__wa:hover { background: #1fb857; }
+
+/* About page */
+.about-hero {
+  padding: 100px 0;
+  background: var(--color-ivory);
+}
+.about-hero__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+.about-hero__visual {
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, #5c4633 0%, #1a1512 100%);
+  position: relative;
+  overflow: hidden;
+}
+.about-values {
+  padding: 100px 0;
+}
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+.value-item {
+  padding: 40px 30px;
+  background: var(--color-ivory);
+  border-top: 3px solid var(--color-gold);
+}
+.value-item .num {
+  font-family: var(--font-serif);
+  font-size: 48px;
+  color: var(--color-gold);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+.value-item h3 { font-size: 22px; margin-bottom: 12px; }
+.value-item p { color: var(--color-text-muted); font-size: 14px; }
+
+/* FAQ */
+.faq-list {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 60px 0 100px;
+}
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+}
+.faq-q {
+  width: 100%;
+  padding: 26px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-dark);
+  cursor: pointer;
+}
+.faq-q:hover { color: var(--color-gold); }
+.faq-q .plus {
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--color-gold);
+  color: var(--color-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all .3s var(--ease);
+  font-size: 18px;
+  font-weight: 300;
+}
+.faq-item.open .plus { background: var(--color-gold); color: var(--color-white); transform: rotate(45deg); }
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .5s var(--ease);
+}
+.faq-a p {
+  padding: 0 0 26px;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  font-size: 15px;
+  max-width: 90%;
+}
+.faq-item.open .faq-a { max-height: 300px; }
+
+/* Legal / Text pages */
+.legal {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 60px 0 100px;
+}
+.legal h2 {
+  font-size: 26px;
+  margin: 40px 0 16px;
+  color: var(--color-dark);
+}
+.legal p, .legal ul {
+  color: var(--color-text-muted);
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+.legal ul { padding-left: 24px; }
+.legal ul li { margin-bottom: 8px; list-style: disc; }
+
+/* Contact page grid */
+.contact-page {
+  padding: 60px 0 100px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 70px;
+}
+.contact-info h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+.contact-info p {
+  color: var(--color-text-muted);
+  margin-bottom: 40px;
+  line-height: 1.8;
+}
+.contact-page .contact-item__icon {
+  color: var(--color-gold);
+  border-color: var(--color-gold);
+}
+.contact-page .contact-item__label { color: var(--color-gold); }
+.contact-page .contact-item__value { color: var(--color-dark); font-weight: 500; }
+.contact-page .contact-item {
+  margin-bottom: 20px;
+}
+.contact-form {
+  background: var(--color-ivory);
+  padding: 44px;
+}
+.contact-form h3 {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+.contact-form .form-field input,
+.contact-form .form-field textarea,
+.contact-form .form-field select {
+  background: var(--color-white);
+  color: var(--color-dark);
+  border: 1px solid var(--color-border);
+}
+.contact-form .form-field input::placeholder,
+.contact-form .form-field textarea::placeholder {
+  color: var(--color-text-light);
+}
+.contact-form .form-field select {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path fill='%231A1512' d='M6 8L2 4h8z'/></svg>");
+}
+.contact-form .form-field input:focus,
+.contact-form .form-field textarea:focus,
+.contact-form .form-field select:focus {
+  border-color: var(--color-gold);
+}
+.contact-form p.small {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+
+/* Utilities */
+.hidden { display: none !important; }
+.fade-in { animation: fadeIn .6s var(--ease); }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1100px) {
+  .nav { gap: 24px; }
+  .nav a { font-size: 11px; }
+  .products-grid, .cat-grid { grid-template-columns: repeat(3, 1fr); }
+  .why-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+  .testi-grid { grid-template-columns: 1fr; }
+  .footer__grid { grid-template-columns: 1fr 1fr; gap: 40px; }
+  .shop-layout { grid-template-columns: 1fr; }
+  .shop-filters { display: none; }
+  .pdp-grid { grid-template-columns: 1fr; gap: 40px; }
+  .pdp__gallery { position: static; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 900px) {
+  .header__inner { grid-template-columns: auto 1fr auto; }
+  .nav { display: none; }
+  .hamburger { display: flex; }
+  .brand { justify-self: start; }
+  .brand__text { display: none !important; }
+  .brand__logo { width: 42px; height: 42px; }
+  .brand__mark { width: 38px; height: 38px; font-size: 18px; }
+  .brand__name { font-size: 15px; }
+  .brand__tag { font-size: 8px; }
+  .header__actions { justify-self: end; gap: 8px; }
+  .hero__grid { grid-template-columns: 1fr; gap: 60px; padding: 60px 0; text-align: center; }
+  .hero__text .eyebrow { display: block; }
+  .hero__desc { margin-left: auto; margin-right: auto; }
+  .hero__cta { justify-content: center; }
+  .hero__meta { justify-content: center; gap: 30px; }
+  .hero__visual { max-height: 500px; justify-self: center; max-width: 420px; }
+  .story__grid { grid-template-columns: 1fr; gap: 50px; }
+  .consultation__grid { grid-template-columns: 1fr; gap: 50px; }
+  .about-hero__grid { grid-template-columns: 1fr; gap: 50px; }
+  .values-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .cat-grid { grid-template-columns: repeat(2, 1fr); }
+  .products-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .footer__grid { grid-template-columns: 1fr; gap: 40px; }
+  .footer__bottom { flex-direction: column; text-align: center; }
+}
+
+@media (max-width: 560px) {
+  :root { --nav-h: 64px; }
+  .announce { font-size: 10px; letter-spacing: 0.15em; height: 34px; }
+  .brand__text { display: none !important; }
+  .brand__logo { width: 40px; height: 40px; }
+  .brand { gap: 0; }
+  .icon-btn { width: 36px; height: 36px; }
+  .icon-btn svg { width: 18px; height: 18px; }
+  .hero__title { font-size: 2.5rem; }
+  .hero__desc { font-size: 15px; }
+  .btn { padding: 14px 24px; font-size: 11px; white-space: normal; }
+  .hero__cta .btn { flex: 1; padding: 14px 12px; line-height: 1.3; }
+  .hero__meta { flex-wrap: wrap; gap: 24px; }
+  .hero__meta-item .num { font-size: 26px; }
+  .hero__visual { aspect-ratio: 3 / 4; }
+  .cat-grid { grid-template-columns: 1fr; gap: 16px; }
+  .cat-card { aspect-ratio: 4 / 3; }
+  .projects-grid { grid-template-columns: 1fr; }
+  .products-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+  .product-card__name { font-size: 15px; }
+  .product-card__price { font-size: 13px; }
+  .why-grid { grid-template-columns: 1fr; gap: 30px; }
+  .section-title { font-size: 2rem; }
+  .story__grid, .consultation__grid { gap: 40px; }
+  .consultation__form, .contact-form { padding: 28px 22px; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .final-cta h2 { font-size: 2rem; }
+  .final-cta__buttons { flex-direction: column; width: 100%; }
+  .final-cta__buttons .btn { width: 100%; }
+  .wa-float { width: 54px; height: 54px; bottom: 20px; right: 20px; }
+  .wa-float svg { width: 26px; height: 26px; }
+  .pdp__name { font-size: 1.75rem; }
+  .pdp__actions { flex-direction: column; }
+  .pdp__qty { width: 100%; justify-content: space-between; }
+  .pdp__qty button { width: 60px; }
+  .drawer { max-width: 100%; }
+  .drawer__body, .drawer__head, .drawer__foot { padding-left: 20px; padding-right: 20px; }
+}
+
+/* Print / accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ============ ANNOUNCEMENT BAR ============ */-->
+<div class="announce">
+  <span>QUALITY DOORS <span class="dot">●</span> PREMIUM FINISHING <span class="dot">●</span> NATIONWIDE DELIVERY FROM LAGOS</span>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="header__inner">
+      <button class="icon-btn hamburger" id="hamburger" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+
+      <a href="#/home" class="brand" onclick="return navigateTo('home')">
+        <span class="brand__name" style="margin: 0; line-height: 1.2;">Prime Building Finishing</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#/home" data-page="home" onclick="return navigateTo('home')">Home</a>
+        <a href="#/shop" data-page="shop" onclick="return navigateTo('shop')">Collection</a>
+        <a href="#/shop/entrance" data-page="shop" onclick="return navigateTo('shop', {cat: 'entrance'})">Entrance</a>
+        <a href="#/shop/interior" data-page="shop" onclick="return navigateTo('shop', {cat: 'interior'})">Interior</a>
+        <a href="#/shop/security" data-page="shop" onclick="return navigateTo('shop', {cat: 'security'})">Security</a>
+        <a href="#/shop/hardware" data-page="shop" onclick="return navigateTo('shop', {cat: 'hardware'})">Hardware</a>
+        <a href="#/about" data-page="about" onclick="return navigateTo('about')">About</a>
+        <a href="#/contact" data-page="contact" onclick="return navigateTo('contact')">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" onclick="openSearch()" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+        </button>
+        <button class="icon-btn" onclick="openCart()" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="icon-btn__badge" id="cartBadge">0</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MAIN APP ============ -->
+<main id="app"></main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <div class="brand">
+          <div class="brand__logo" style="width: 45px; height: 45px;">
+            <img src="data:image/png;base64,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" alt="Prime Building Finishing Logo" />
+          </div>
+          <div class="brand__text">
+            <span class="brand__name" style="color: var(--color-white);">Prime</span>
+            <span class="brand__tag">Building Finishing</span>
+          </div>
+        </div>
+        <p>Quality doors, premium finishing — crafted for the homes that define Nigeria's finest addresses.</p>
+        <div class="footer__social">
+          <a href="https://instagram.com/primebuildingfinishing" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://facebook.com/primebuildingfinishing" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12A10 10 0 1 0 10.5 21.87v-6.99h-2.5v-2.88h2.5V9.8c0-2.47 1.47-3.83 3.72-3.83 1.08 0 2.2.19 2.2.19v2.42h-1.24c-1.22 0-1.6.76-1.6 1.54v1.85h2.72l-.43 2.88h-2.29v6.99A10 10 0 0 0 22 12z"/></svg>
+          </a>
+          <a href="https://tiktok.com/@primebuildingfinishing" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.12v-3.5a6.36 6.36 0 0 0-5.94 10.36 6.36 6.36 0 0 0 10.99-4.37V9.05a8.16 8.16 0 0 0 4.76 1.52v-3.5a4.85 4.85 0 0 1-1.56-.38z"/></svg>
+          </a>
+          <a href="https://wa.me/2347039863622" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.65-.94-2.25-.24-.6-.5-.5-.68-.5-.17-.02-.37-.02-.57-.02-.2 0-.53.08-.8.38-.28.3-1.06 1.03-1.06 2.53s1.08 2.94 1.23 3.14c.15.2 2.13 3.25 5.16 4.55.72.32 1.28.5 1.73.65.72.23 1.38.2 1.9.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35zM12 2a10 10 0 0 0-8.55 15.15L2 22l4.98-1.3A10 10 0 1 0 12 2z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h4>Collection</h4>
+        <ul>
+          <li><a href="#/shop" onclick="return navigateTo('shop')">All Doors</a></li>
+          <li><a href="#/shop/entrance" onclick="return navigateTo('shop', {cat:'entrance'})">Entrance Doors</a></li>
+          <li><a href="#/shop/interior" onclick="return navigateTo('shop', {cat:'interior'})">Interior Doors</a></li>
+          <li><a href="#/shop/security" onclick="return navigateTo('shop', {cat:'security'})">Security Doors</a></li>
+          <li><a href="#/shop/hardware" onclick="return navigateTo('shop', {cat:'hardware'})">Hardware</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#/contact" onclick="return navigateTo('contact')">Contact Us</a></li>
+          <li><a href="#/delivery" onclick="return navigateTo('delivery')">Delivery & Installation</a></li>
+          <li><a href="#/faq" onclick="return navigateTo('faq')">FAQ</a></li>
+          <li><a href="#/returns" onclick="return navigateTo('returns')">Returns Policy</a></li>
+          <li><a href="#/about" onclick="return navigateTo('about')">About Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="tel:+2347039863622">+234 703 986 3622</a></li>
+          <li><a href="mailto:ighosotub@gmail.com">ighosotub@gmail.com</a></li>
+          <li style="color: rgba(240, 230, 210, 0.65);">Orile, Lagos, Nigeria</li>
+          <li><a href="https://wa.me/2347039863622" target="_blank" rel="noopener">WhatsApp Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div>© 2026 Prime Building Finishing. All Rights Reserved.</div>
+      <div class="footer__bottom-links">
+        <a href="#/privacy" onclick="return navigateTo('privacy')">Privacy Policy</a>
+        <a href="#/terms" onclick="return navigateTo('terms')">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ WHATSAPP FLOAT ============ -->
+<a href="#" class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="WhatsApp us">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.65-.94-2.25-.24-.6-.5-.5-.68-.5-.17-.02-.37-.02-.57-.02-.2 0-.53.08-.8.38-.28.3-1.06 1.03-1.06 2.53s1.08 2.94 1.23 3.14c.15.2 2.13 3.25 5.16 4.55.72.32 1.28.5 1.73.65.72.23 1.38.2 1.9.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35zM12 2a10 10 0 0 0-8.55 15.15L2 22l4.98-1.3A10 10 0 1 0 12 2z"/></svg>
+</a>
+
+<!-- ============ OVERLAYS ============ -->
+<div class="overlay" id="overlay" onclick="closeAll()"></div>
+
+<!-- Cart drawer -->
+<aside class="drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer__head">
+    <div class="drawer__title" id="drawerTitle">Your Cart</div>
+    <button class="drawer__close" onclick="closeAll()" aria-label="Close cart">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="drawer__body" id="cartBody">
+    <div id="cartItemsContainer"></div>
+    
+    <!-- Checkout form (hidden by default, scrolls with body) -->
+    <form class="checkout-form" id="checkoutForm" onsubmit="handleCheckoutSubmit(event)">
+      <div style="padding: 0 0;">
+        <div style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--color-border);">
+          <h3 style="font-family: var(--font-serif); font-size: 18px; margin-bottom: 12px; color: var(--color-dark);">Delivery Details</h3>
+          
+          <div class="form-row">
+            <div class="form-field required">
+              <label>Full Name</label>
+              <input type="text" name="fullName" placeholder="e.g. John Okonkwo" required>
+              <div class="form-error"></div>
+            </div>
+            <div class="form-field required">
+              <label>WhatsApp Number</label>
+              <input type="tel" name="phone" placeholder="+234 703 986 3622" required>
+              <div class="form-error"></div>
+            </div>
+          </div>
+
+          <div class="form-row-full">
+            <div class="form-field">
+              <label>Email Address (optional)</label>
+              <input type="email" name="email" placeholder="your@email.com">
+              <div class="form-error"></div>
+            </div>
+          </div>
+
+          <div class="form-row-full">
+            <div class="form-field required">
+              <label>Delivery Address</label>
+              <input type="text" name="address" placeholder="Street address" required>
+              <div class="form-error"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field required">
+              <label>City</label>
+              <input type="text" name="city" placeholder="e.g. Lagos" required>
+              <div class="form-error"></div>
+            </div>
+            <div class="form-field required">
+              <label>State</label>
+              <input type="text" name="state" placeholder="e.g. Lagos State" required>
+              <div class="form-error"></div>
+            </div>
+          </div>
+
+          <div class="form-row-full">
+            <div class="form-field">
+              <label>Delivery Instructions (optional)</label>
+              <textarea name="instructions" placeholder="e.g. Call before arriving, leave at gate, etc."></textarea>
+              <div class="form-error"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="drawer__foot" id="cartFoot" style="display:none;">
+    <div class="drawer__total">
+      <span>Product Total</span>
+      <strong id="cartTotal">₦0</strong>
+    </div>
+    <p class="drawer__note">📍 Delivery fee will be confirmed based on your delivery location.</p>
+    <div class="drawer__actions">
+      <button type="button" class="btn btn--primary" id="checkoutBtn" onclick="showCheckoutForm()" style="display:none;">Proceed to Checkout</button>
+      <button type="submit" class="btn btn--primary" id="whatsappCheckoutBtn" form="checkoutForm" style="display:none;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.65-.94-2.25-.24-.6-.5-.5-.68-.5-.17-.02-.37-.02-.57-.02-.2 0-.53.08-.8.38-.28.3-1.06 1.03-1.06 2.53s1.08 2.94 1.23 3.14c.15.2 2.13 3.25 5.16 4.55.72.32 1.28.5 1.73.65.72.23 1.38.2 1.9.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35zM12 2a10 10 0 0 0-8.55 15.15L2 22l4.98-1.3A10 10 0 1 0 12 2z"/></svg>
+        Complete Order on WhatsApp
+      </button>
+      <button type="button" class="btn btn--outline" onclick="hideCheckoutForm()" id="backToCartBtn" style="display:none;">Back to Cart</button>
+    </div>
+  </div>
+</aside>
+
+<!-- Mobile menu -->
+<aside class="mobile-menu" id="mobileMenu" aria-label="Mobile menu">
+  <div class="mobile-menu__head">
+    <a href="#/home" class="brand" onclick="closeAll(); return navigateTo('home')">
+      <div class="brand__logo">
+        <img src="pbf-logo.png" alt="Prime Building Finishing Logo" />
+      </div>
+      <div class="brand__text">
+        <span class="brand__name">Prime</span>
+        <span class="brand__tag">Building Finishing</span>
+      </div>
+    </a>
+    <button class="drawer__close" onclick="closeAll()" aria-label="Close menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu__body">
+    <div class="mobile-menu__nav">
+      <a href="#/home" onclick="closeAll(); return navigateTo('home')">Home</a>
+      <a href="#/shop" onclick="closeAll(); return navigateTo('shop')">Collection</a>
+      <a href="#/shop/entrance" onclick="closeAll(); return navigateTo('shop', {cat:'entrance'})">Entrance Doors</a>
+      <a href="#/shop/interior" onclick="closeAll(); return navigateTo('shop', {cat:'interior'})">Interior Doors</a>
+      <a href="#/shop/security" onclick="closeAll(); return navigateTo('shop', {cat:'security'})">Security Doors</a>
+      <a href="#/shop/hardware" onclick="closeAll(); return navigateTo('shop', {cat:'hardware'})">Hardware</a>
+      <a href="#/about" onclick="closeAll(); return navigateTo('about')">About Us</a>
+      <a href="#/contact" onclick="closeAll(); return navigateTo('contact')">Contact</a>
+      <a href="#/faq" onclick="closeAll(); return navigateTo('faq')">FAQ</a>
+      <a href="#/delivery" onclick="closeAll(); return navigateTo('delivery')">Delivery</a>
+    </div>
+  </div>
+  <div class="mobile-menu__foot">
+    <h4>Get in Touch</h4>
+    <p>Call: <a href="tel:+2347039863622">+234 703 986 3622</a></p>
+    <p>Email: <a href="mailto:ighosotub@gmail.com">ighosotub@gmail.com</a></p>
+    <p style="color: var(--color-text-muted);">Orile, Lagos</p>
+    <div class="mobile-menu__social">
+      <a href="https://instagram.com/primebuildingfinishing" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+      </a>
+      <a href="https://wa.me/2347039863622" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.65-.94-2.25-.24-.6-.5-.5-.68-.5-.17-.02-.37-.02-.57-.02-.2 0-.53.08-.8.38-.28.3-1.06 1.03-1.06 2.53s1.08 2.94 1.23 3.14c.15.2 2.13 3.25 5.16 4.55.72.32 1.28.5 1.73.65.72.23 1.38.2 1.9.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35zM12 2a10 10 0 0 0-8.55 15.15L2 22l4.98-1.3A10 10 0 1 0 12 2z"/></svg>
+      </a>
+    </div>
+  </div>
+</aside>
+
+<!-- Search overlay -->
+<div class="search-overlay" id="searchOverlay" role="dialog">
+  <button class="search-overlay__close" onclick="closeAll()" aria-label="Close search">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+  </button>
+  <div class="search-overlay__inner">
+    <div class="search-overlay__label">— Search the Collection —</div>
+    <div class="search-input-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="searchInput" placeholder="Search doors, hardware, finishing…" autocomplete="off">
+    </div>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+  <span id="toastMsg">Added to cart</span>
+</div>
+
+<!-- ============================================================
+     APPLICATION LOGIC
+     ============================================================ -->
+<script>
+/* ============ CONFIG — EASY TO EDIT ============ */
+const CONFIG = {
+  whatsappNumber: '2347039863622',          // Change your WhatsApp number here (no + sign, country code first)
+  whatsappMessage: "Hi Prime Building Finishing! I'd like to know more about your products.",
+  currency: '₦',
+  brandName: 'Prime Building Finishing',
+  email: 'ighosotub@gmail.com',
+  phone: '+2347039863622',
+  address: 'Orile, Lagos, Nigeria'
+};
+
+/* ============ PRODUCTS ============ */
+// Add / edit products here. Each product has an id, name, category, price, description, features, and a `door` variant used for the SVG rendering.
+const PRODUCTS = [
+  {
+    id: 'p01',
+    name: 'Aurelio Grand Entrance Door',
+    category: 'entrance',
+    categoryLabel: 'Entrance Doors',
+    price: 1850000,
+    tag: 'BESTSELLER',
+    tagStyle: 'gold',
+    description: 'A commanding entrance handcrafted from solid mahogany, finished with hand-rubbed lacquer and fitted with antique brass hardware. Designed for luxury villas and executive homes where the first impression matters most.',
+    features: ['Solid mahogany core', 'Hand-rubbed lacquer finish', 'Antique brass fittings', 'Reinforced hinges', 'Custom sizing available'],
+    door: 'grand'
+  },
+  {
+    id: 'p02',
+    name: 'Milano Pivot Door',
+    category: 'entrance',
+    categoryLabel: 'Entrance Doors',
+    price: 950000,
+    tag: 'NEW',
+    description: 'A floor-to-ceiling pivot door in the modern Italian tradition. Perfectly balanced, silent-close mechanism with a minimalist vertical handle for an architectural statement.',
+    features: ['Concealed pivot hinge', 'Anti-warp engineered core', 'Matte black or brushed brass hardware', 'Height up to 3m', 'Fingerprint-resistant finish'],
+    door: 'pivot'
+  },
+  {
+    id: 'p03',
+    name: 'Roma Classic Interior Door',
+    category: 'interior',
+    categoryLabel: 'Interior Doors',
+    price: 280000,
+    description: 'Timeless Italian-style panelled door in a soft ivory finish with subtle gold-leaf detailing on the mouldings. Ideal for bedrooms and formal living areas.',
+    features: ['MDF engineered panel', 'Anti-scratch surface', 'Gold-leaf detail', 'Available in 6 colours', 'Silent-close hinges'],
+    door: 'classic'
+  },
+  {
+    id: 'p04',
+    name: 'Fortezza Security Door',
+    category: 'security',
+    categoryLabel: 'Security Doors',
+    price: 720000,
+    tag: 'REINFORCED',
+    description: 'Reinforced steel core clad in premium hardwood. Multi-point locking system with three deadbolts, viewer, and armoured hinges. Certified break-in resistant.',
+    features: ['Reinforced steel core', 'Multi-point locking', 'Armoured hinges', 'Peephole with wide-angle lens', 'Thermal & sound insulation'],
+    door: 'security'
+  },
+  {
+    id: 'p05',
+    name: 'Executive Office Door',
+    category: 'interior',
+    categoryLabel: 'Interior Doors',
+    price: 480000,
+    description: 'Frosted glass panel set in a hand-finished walnut frame. A sophisticated choice for executive offices, private studies and boardrooms.',
+    features: ['Tempered frosted glass', 'Walnut hardwood frame', 'Concealed hinges', 'Optional soundproofing', 'Custom glass patterns'],
+    door: 'executive'
+  },
+  {
+    id: 'p06',
+    name: 'Venetian Handle Collection',
+    category: 'hardware',
+    categoryLabel: 'Hardware',
+    price: 85000,
+    description: 'Antique brass handle set inspired by Venetian palazzos. Sold as a full set: lever handle, escutcheon plates, and matched hinges. Sold per door.',
+    features: ['Solid brass construction', 'Aged antique finish', 'Full set (2 handles + 3 hinges)', 'Fits all standard doors', 'Lifetime finish warranty'],
+    door: 'handle'
+  },
+  {
+    id: 'p07',
+    name: 'Domus Sliding Barn Door',
+    category: 'interior',
+    categoryLabel: 'Interior Doors',
+    price: 680000,
+    tag: 'NEW',
+    description: 'A contemporary space-saving sliding door with exposed brushed-gold rail. Available in oak, walnut, and ebony finishes with matched hardware.',
+    features: ['Brushed gold track', 'Soft-close mechanism', 'Solid engineered wood', 'Full assembly kit included', 'Wall-mounted or in-wall systems'],
+    door: 'sliding'
+  },
+  {
+    id: 'p08',
+    name: 'Reggia Double Entrance',
+    category: 'entrance',
+    categoryLabel: 'Entrance Doors',
+    price: 2400000,
+    tag: 'FLAGSHIP',
+    tagStyle: 'gold',
+    description: 'A grand double-leaf entrance for the country\'s most distinguished homes. Custom-carved solid oak with wrought-iron detailing and hand-forged handles.',
+    features: ['Double-leaf solid oak', 'Hand-forged iron details', 'Master locksmith installation', 'Full custom sizing', 'Weather-sealed for tropical climate'],
+    door: 'double'
+  },
+  {
+    id: 'p09',
+    name: 'Torino WPC Interior Door',
+    category: 'interior',
+    categoryLabel: 'Interior Doors',
+    price: 180000,
+    description: 'Modern water-resistant WPC door — ideal for bathrooms, kitchens, and high-humidity rooms. Sleek flat panel with integrated stainless handle.',
+    features: ['100% water resistant', 'Termite & warp proof', 'Sleek flat panel', 'Stainless steel handle', '6 modern colours available'],
+    door: 'wpc'
+  },
+  {
+    id: 'p10',
+    name: 'Palazzo Wardrobe System',
+    category: 'interior',
+    categoryLabel: 'Wardrobe',
+    price: 340000,
+    description: 'Bespoke wardrobe finishing per panel — from mirrored slider fronts to hand-painted lacquered cabinetry. Installation and fitting included in Lagos.',
+    features: ['Custom cabinetry design', 'Soft-close everything', 'Mirror & lacquer options', 'Lagos installation included', 'Per-linear-metre pricing'],
+    door: 'wardrobe'
+  },
+  {
+    id: 'p11',
+    name: 'Aluminum Security Door',
+    category: 'security',
+    categoryLabel: 'Security Doors',
+    price: 480000,
+    description: 'Industrial modern aluminium security door with integrated ventilation grille. A refined choice for boundary doors and utility entries.',
+    features: ['Powder-coated aluminium', 'Ventilation grille', 'Anti-theft hinges', '5-year finish warranty', 'Multiple colour options'],
+    door: 'aluminum'
+  },
+  {
+    id: 'p12',
+    name: 'Brass Lever Handle Set',
+    category: 'hardware',
+    categoryLabel: 'Hardware',
+    price: 120000,
+    description: 'Contemporary polished brass lever handle collection — a modern classic. Includes matched escutcheon and cylindrical mortise lock.',
+    features: ['Polished brass', 'Modern lever design', 'Cylindrical mortise lock', 'Includes 3 keys', 'Ideal for interior doors'],
+    door: 'handle-modern'
+  }
+];
+
+const CATEGORIES = [
+  { key: 'entrance', label: 'Entrance Doors', tagline: 'Bold first impressions' },
+  { key: 'interior', label: 'Interior Doors', tagline: 'Everyday elegance' },
+  { key: 'security', label: 'Security Doors', tagline: 'Uncompromising protection' },
+  { key: 'hardware', label: 'Hardware & Handles', tagline: 'The finishing touch' }
+];
+
+/* ============ SVG RENDERING — realistic architectural doors ============ */
+// Each product's imagery is a stylized SVG "door in a frame" composition.
+// Colour keys mapped to wood palettes and hardware styles.
+function doorSVG(variant, opts = {}) {
+  const w = opts.w || 300, h = opts.h || 400;
+  const palettes = {
+    grand: { wood1: '#5a3a24', wood2: '#3a2416', wood3: '#241408', wall: '#e8dcc4', frame: '#b08d57', handle: '#d4b584' },
+    pivot: { wood1: '#3d3d3d', wood2: '#1a1a1a', wood3: '#0a0a0a', wall: '#f0e6d2', frame: '#8f6f42', handle: '#b08d57' },
+    classic: { wood1: '#faf6ee', wood2: '#e8dcc4', wood3: '#c9b896', wall: '#3d2e24', frame: '#b08d57', handle: '#8f6f42' },
+    security: { wood1: '#2a231e', wood2: '#1a1512', wood3: '#0a0806', wall: '#4a3a2d', frame: '#8f6f42', handle: '#b08d57' },
+    executive: { wood1: '#6b4a30', wood2: '#4a3220', wood3: '#2a1c12', wall: '#e8dcc4', frame: '#b08d57', handle: '#d4b584' },
+    handle: { wood1: '#faf6ee', wood2: '#e8dcc4', wood3: '#d4b584', wall: '#2a231e', frame: '#b08d57', handle: '#8f6f42' },
+    sliding: { wood1: '#8b6b45', wood2: '#5c4633', wood3: '#3d2e24', wall: '#f0e6d2', frame: '#8f6f42', handle: '#b08d57' },
+    double: { wood1: '#4a3a2d', wood2: '#2a1f18', wood3: '#1a1210', wall: '#e8dcc4', frame: '#8f6f42', handle: '#d4b584' },
+    wpc: { wood1: '#e8dcc4', wood2: '#c9b896', wood3: '#8f7a5a', wall: '#3d2e24', frame: '#5c4633', handle: '#8f6f42' },
+    wardrobe: { wood1: '#3d2e24', wood2: '#2a1f18', wood3: '#1a1210', wall: '#f0e6d2', frame: '#b08d57', handle: '#d4b584' },
+    aluminum: { wood1: '#3d3d3d', wood2: '#5a5a5a', wood3: '#1a1a1a', wall: '#e8dcc4', frame: '#8f8f8f', handle: '#b08d57' },
+    'handle-modern': { wood1: '#faf6ee', wood2: '#f0e6d2', wood3: '#e8dcc4', wall: '#3d2e24', frame: '#b08d57', handle: '#d4b584' }
+  };
+  const p = palettes[variant] || palettes.grand;
+
+  // Hardware variants (handles)
+  if (variant === 'handle' || variant === 'handle-modern') {
+    return `<svg viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="hg-${variant}" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="${p.wood1}"/>
+          <stop offset="100%" stop-color="${p.wood2}"/>
+        </linearGradient>
+        <linearGradient id="hh-${variant}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="${p.frame}" stop-opacity="1"/>
+          <stop offset="50%" stop-color="${p.handle}" stop-opacity="1"/>
+          <stop offset="100%" stop-color="${p.wall}" stop-opacity="1"/>
+        </linearGradient>
+      </defs>
+      <rect width="${w}" height="${h}" fill="url(#hg-${variant})"/>
+      <!-- backing plate -->
+      <rect x="${w*0.35}" y="${h*0.2}" width="${w*0.3}" height="${h*0.6}" fill="${p.wall}" opacity="0.1"/>
+      <!-- handle assembly -->
+      <ellipse cx="${w*0.5}" cy="${h*0.32}" rx="${w*0.08}" ry="${h*0.04}" fill="url(#hh-${variant})" opacity="0.9"/>
+      <rect x="${w*0.35}" y="${h*0.4}" width="${w*0.35}" height="${h*0.06}" rx="3" fill="url(#hh-${variant})"/>
+      <ellipse cx="${w*0.5}" cy="${h*0.55}" rx="${w*0.08}" ry="${h*0.04}" fill="url(#hh-${variant})" opacity="0.9"/>
+      <circle cx="${w*0.5}" cy="${h*0.7}" r="${w*0.06}" fill="url(#hh-${variant})"/>
+      <circle cx="${w*0.5}" cy="${h*0.7}" r="${w*0.03}" fill="${p.wall}" opacity="0.3"/>
+      <!-- decorative etching -->
+      <line x1="${w*0.2}" y1="${h*0.9}" x2="${w*0.8}" y2="${h*0.9}" stroke="${p.frame}" stroke-width="0.5" opacity="0.4"/>
+    </svg>`;
+  }
+
+  // Sliding barn door — horizontal composition
+  if (variant === 'sliding') {
+    return `<svg viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="sw-${variant}" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="${p.wall}"/>
+          <stop offset="100%" stop-color="${p.wall}" stop-opacity="0.7"/>
+        </linearGradient>
+        <linearGradient id="sd-${variant}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="${p.wood1}"/>
+          <stop offset="50%" stop-color="${p.wood2}"/>
+          <stop offset="100%" stop-color="${p.wood3}"/>
+        </linearGradient>
+      </defs>
+      <rect width="${w}" height="${h}" fill="url(#sw-${variant})"/>
+      <!-- rail -->
+      <rect x="${w*0.05}" y="${h*0.15}" width="${w*0.9}" height="4" fill="${p.frame}"/>
+      <!-- door -->
+      <rect x="${w*0.12}" y="${h*0.19}" width="${w*0.66}" height="${h*0.7}" fill="url(#sd-${variant})"/>
+      <!-- plank lines -->
+      <line x1="${w*0.28}" y1="${h*0.19}" x2="${w*0.28}" y2="${h*0.89}" stroke="${p.wood3}" stroke-width="1" opacity="0.4"/>
+      <line x1="${w*0.44}" y1="${h*0.19}" x2="${w*0.44}" y2="${h*0.89}" stroke="${p.wood3}" stroke-width="1" opacity="0.4"/>
+      <line x1="${w*0.6}" y1="${h*0.19}" x2="${w*0.6}" y2="${h*0.89}" stroke="${p.wood3}" stroke-width="1" opacity="0.4"/>
+      <!-- pull handle -->
+      <rect x="${w*0.7}" y="${h*0.48}" width="${w*0.05}" height="${h*0.12}" fill="${p.handle}"/>
+      <!-- rollers -->
+      <circle cx="${w*0.2}" cy="${h*0.16}" r="6" fill="${p.frame}"/>
+      <circle cx="${w*0.7}" cy="${h*0.16}" r="6" fill="${p.frame}"/>
+      <!-- floor shadow -->
+      <ellipse cx="${w*0.45}" cy="${h*0.92}" rx="${w*0.35}" ry="4" fill="${p.wood3}" opacity="0.3"/>
+    </svg>`;
+  }
+
+  // Double door variant
+  if (variant === 'double') {
+    return `<svg viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+      <defs>
+        <linearGradient id="dw-${variant}" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="${p.wall}"/>
+          <stop offset="100%" stop-color="${p.wall}" stop-opacity="0.5"/>
+        </linearGradient>
+        <linearGradient id="dd-${variant}" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="${p.wood1}"/>
+          <stop offset="60%" stop-color="${p.wood2}"/>
+          <stop offset="100%" stop-color="${p.wood3}"/>
+        </linearGradient>
+      </defs>
+      <rect width="${w}" height="${h}" fill="url(#dw-${variant})"/>
+      <!-- frame -->
+      <rect x="${w*0.1}" y="${h*0.06}" width="${w*0.8}" height="${h*0.88}" fill="${p.frame}"/>
+      <!-- left door -->
+      <rect x="${w*0.13}" y="${h*0.09}" width="${w*0.37}" height="${h*0.82}" fill="url(#dd-${variant})"/>
+      <!-- right door -->
+      <rect x="${w*0.5}" y="${h*0.09}" width="${w*0.37}" height="${h*0.82}" fill="url(#dd-${variant})"/>
+      <!-- panels left -->
+      <rect x="${w*0.17}" y="${h*0.13}" width="${w*0.29}" height="${h*0.35}" fill="none" stroke="${p.frame}" stroke-width="1" opacity="0.5"/>
+      <rect x="${w*0.17}" y="${h*0.52}" width="${w*0.29}" height="${h*0.35}" fill="none" stroke="${p.frame}" stroke-width="1" opacity="0.5"/>
+      <!-- panels right -->
+      <rect x="${w*0.54}" y="${h*0.13}" width="${w*0.29}" height="${h*0.35}" fill="none" stroke="${p.frame}" stroke-width="1" opacity="0.5"/>
+      <rect x="${w*0.54}" y="${h*0.52}" width="${w*0.29}" height="${h*0.35}" fill="none" stroke="${p.frame}" stroke-width="1" opacity="0.5"/>
+      <!-- handles -->
+      <circle cx="${w*0.475}" cy="${h*0.5}" r="4" fill="${p.handle}"/>
+      <circle cx="${w*0.525}" cy="${h*0.5}" r="4" fill="${p.handle}"/>
+      <rect x="${w*0.465}" y="${h*0.5}" width="3" height="${h*0.12}" fill="${p.handle}"/>
+      <rect x="${w*0.532}" y="${h*0.5}" width="3" height="${h*0.12}" fill="${p.handle}"/>
+    </svg>`;
+  }
+
+  // Default: single tall door in an architectural frame
+  const hasGlass = variant === 'executive';
+  const isSecurity = variant === 'security';
+  const isPivot = variant === 'pivot';
+  const isWpc = variant === 'wpc';
+  const isAluminum = variant === 'aluminum';
+  const isGrand = variant === 'grand';
+  const isClassic = variant === 'classic';
+  const isWardrobe = variant === 'wardrobe';
+
+  return `<svg viewBox="0 0 ${w} ${h}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="wall-${variant}" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="${p.wall}"/>
+        <stop offset="100%" stop-color="${p.wall}" stop-opacity="0.7"/>
+      </linearGradient>
+      <linearGradient id="wood-${variant}" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="${p.wood1}"/>
+        <stop offset="60%" stop-color="${p.wood2}"/>
+        <stop offset="100%" stop-color="${p.wood3}"/>
+      </linearGradient>
+      <linearGradient id="light-${variant}" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="white" stop-opacity="0.15"/>
+        <stop offset="100%" stop-color="white" stop-opacity="0"/>
+      </linearGradient>
+      ${hasGlass ? `<linearGradient id="glass-${variant}" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#f0e6d2" stop-opacity="0.9"/>
+        <stop offset="50%" stop-color="#e8dcc4" stop-opacity="0.6"/>
+        <stop offset="100%" stop-color="#c9b896" stop-opacity="0.4"/>
+      </linearGradient>` : ''}
+    </defs>
+
+    <!-- wall / background -->
+    <rect width="${w}" height="${h}" fill="url(#wall-${variant})"/>
+
+    <!-- floor -->
+    <rect y="${h*0.92}" width="${w}" height="${h*0.08}" fill="${p.wood3}" opacity="0.4"/>
+
+    <!-- door frame -->
+    <rect x="${w*0.15}" y="${h*0.08}" width="${w*0.7}" height="${h*0.84}" fill="${p.frame}"/>
+
+    <!-- door -->
+    <rect x="${w*0.18}" y="${h*0.11}" width="${w*0.64}" height="${h*0.81}" fill="url(#wood-${variant})"/>
+
+    ${isPivot ? `
+      <!-- pivot: minimal vertical accent -->
+      <rect x="${w*0.72}" y="${h*0.35}" width="2" height="${h*0.3}" fill="${p.handle}"/>
+    ` : ''}
+
+    ${isGrand ? `
+      <!-- grand door panels -->
+      <rect x="${w*0.24}" y="${h*0.17}" width="${w*0.52}" height="${h*0.24}" fill="none" stroke="${p.frame}" stroke-width="1" opacity="0.6"/>
+      <rect x="${w*0.27}" y="${h*0.2}" width="${w*0.46}" height="${h*0.18}" fill="none" stroke="${p.frame}" stroke-width="0.5" opacity="0.4"/>
+      <rect x="${w*0.24}" y="${h*0.45}" width="${w*0.52}" height="${h*0.4}" fill="none" stroke="${p.frame}" stroke-width="1" opacity="0.6"/>
+      <rect x="${w*0.27}" y="${h*0.48}" width="${w*0.46}" height="${h*0.34}" fill="none" stroke="${p.frame}" stroke-width="0.5" opacity="0.4"/>
+    ` : ''}
+
+    ${isClassic ? `
+      <!-- classic paneled -->
+      <rect x="${w*0.24}" y="${h*0.17}" width="${w*0.22}" height="${h*0.3}" fill="none" stroke="${p.frame}" stroke-width="1" opacity="0.7"/>
+      <rect x="${w*0.54}" y="${h*0.17}" width="${w*0.22}" height="${h*0.3}" fill="none" stroke="${p.frame}" stroke-width="1" opacity="0.7"/>
+      <rect x="${w*0.24}" y="${h*0.52}" width="${w*0.22}" height="${h*0.3}" fill="none" stroke="${p.frame}" stroke-width="1" opacity="0.7"/>
+      <rect x="${w*0.54}" y="${h*0.52}" width="${w*0.22}" height="${h*0.3}" fill="none" stroke="${p.frame}" stroke-width="1" opacity="0.7"/>
+    ` : ''}
+
+    ${isSecurity ? `
+      <!-- security studs & viewer -->
+      <circle cx="${w*0.25}" cy="${h*0.2}" r="3" fill="${p.handle}"/>
+      <circle cx="${w*0.75}" cy="${h*0.2}" r="3" fill="${p.handle}"/>
+      <circle cx="${w*0.25}" cy="${h*0.85}" r="3" fill="${p.handle}"/>
+      <circle cx="${w*0.75}" cy="${h*0.85}" r="3" fill="${p.handle}"/>
+      <circle cx="${w*0.5}" cy="${h*0.35}" r="5" fill="${p.wood3}" stroke="${p.handle}" stroke-width="1"/>
+      <rect x="${w*0.24}" y="${h*0.55}" width="${w*0.52}" height="${h*0.2}" fill="none" stroke="${p.handle}" stroke-width="0.5" opacity="0.5"/>
+    ` : ''}
+
+    ${hasGlass ? `
+      <!-- executive glass panel -->
+      <rect x="${w*0.24}" y="${h*0.17}" width="${w*0.52}" height="${h*0.5}" fill="url(#glass-${variant})"/>
+      <rect x="${w*0.24}" y="${h*0.17}" width="${w*0.52}" height="${h*0.5}" fill="none" stroke="${p.frame}" stroke-width="1" opacity="0.7"/>
+      <!-- glass frosted lines -->
+      <line x1="${w*0.28}" y1="${h*0.25}" x2="${w*0.72}" y2="${h*0.25}" stroke="white" stroke-width="0.4" opacity="0.3"/>
+      <line x1="${w*0.28}" y1="${h*0.4}" x2="${w*0.72}" y2="${h*0.4}" stroke="white" stroke-width="0.4" opacity="0.3"/>
+      <line x1="${w*0.28}" y1="${h*0.55}" x2="${w*0.72}" y2="${h*0.55}" stroke="white" stroke-width="0.4" opacity="0.3"/>
+    ` : ''}
+
+    ${isWpc ? `
+      <!-- flat modern panel with light seam -->
+      <line x1="${w*0.5}" y1="${h*0.15}" x2="${w*0.5}" y2="${h*0.88}" stroke="${p.wood3}" stroke-width="0.5" opacity="0.3"/>
+    ` : ''}
+
+    ${isAluminum ? `
+      <!-- ventilation grille -->
+      <g opacity="0.6">
+        <line x1="${w*0.3}" y1="${h*0.55}" x2="${w*0.7}" y2="${h*0.55}" stroke="${p.wood3}" stroke-width="1"/>
+        <line x1="${w*0.3}" y1="${h*0.6}" x2="${w*0.7}" y2="${h*0.6}" stroke="${p.wood3}" stroke-width="1"/>
+        <line x1="${w*0.3}" y1="${h*0.65}" x2="${w*0.7}" y2="${h*0.65}" stroke="${p.wood3}" stroke-width="1"/>
+        <line x1="${w*0.3}" y1="${h*0.7}" x2="${w*0.7}" y2="${h*0.7}" stroke="${p.wood3}" stroke-width="1"/>
+        <line x1="${w*0.3}" y1="${h*0.75}" x2="${w*0.7}" y2="${h*0.75}" stroke="${p.wood3}" stroke-width="1"/>
+      </g>
+      <rect x="${w*0.26}" y="${h*0.17}" width="${w*0.48}" height="${h*0.3}" fill="none" stroke="${p.wood3}" stroke-width="0.5" opacity="0.4"/>
+    ` : ''}
+
+    ${isWardrobe ? `
+      <!-- wardrobe sliding panels -->
+      <line x1="${w*0.5}" y1="${h*0.11}" x2="${w*0.5}" y2="${h*0.92}" stroke="${p.frame}" stroke-width="1"/>
+      <rect x="${w*0.22}" y="${h*0.15}" width="${w*0.24}" height="${h*0.73}" fill="none" stroke="${p.handle}" stroke-width="0.5" opacity="0.3"/>
+      <rect x="${w*0.54}" y="${h*0.15}" width="${w*0.24}" height="${h*0.73}" fill="none" stroke="${p.handle}" stroke-width="0.5" opacity="0.3"/>
+      <rect x="${w*0.47}" y="${h*0.45}" width="2" height="${h*0.15}" fill="${p.handle}"/>
+      <rect x="${w*0.51}" y="${h*0.45}" width="2" height="${h*0.15}" fill="${p.handle}"/>
+    ` : ''}
+
+    ${!isPivot && !isWpc && !isWardrobe ? `
+      <!-- handle -->
+      <rect x="${w*0.7}" y="${h*0.48}" width="6" height="${h*0.08}" fill="${p.handle}"/>
+      <circle cx="${w*0.73}" cy="${h*0.52}" r="3" fill="${p.handle}"/>
+    ` : ''}
+    ${isWpc ? `
+      <!-- WPC stainless handle -->
+      <rect x="${w*0.7}" y="${h*0.44}" width="4" height="${h*0.12}" fill="#d4d4d4"/>
+    ` : ''}
+
+    <!-- light overlay -->
+    <rect width="${w}" height="${h}" fill="url(#light-${variant})"/>
+
+    <!-- ambient floor shadow -->
+    <ellipse cx="${w*0.5}" cy="${h*0.94}" rx="${w*0.35}" ry="3" fill="${p.wood3}" opacity="0.5"/>
+  </svg>`;
+}
+
+/* Category card visuals — more atmospheric */
+function categorySVG(key) {
+  const map = {
+    entrance: 'grand',
+    interior: 'classic',
+    security: 'security',
+    hardware: 'handle',
+    gifts: 'grand'
+  };
+  return doorSVG(map[key] || 'grand', { w: 400, h: 520 });
+}
+
+/* Project card visuals — architectural scenes */
+function projectSVG(idx) {
+  const palettes = [
+    { bg: '#1a1512', accent: '#b08d57', door: '#3d2e24' },
+    { bg: '#2a231e', accent: '#d4b584', door: '#4a3a2d' },
+    { bg: '#3d2e24', accent: '#b08d57', door: '#1a1512' }
+  ];
+  const p = palettes[idx % 3];
+  return `<svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="proj-${idx}" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="${p.bg}"/>
+        <stop offset="100%" stop-color="${p.door}"/>
+      </linearGradient>
+      <radialGradient id="light-p-${idx}" cx="0.3" cy="0.3">
+        <stop offset="0%" stop-color="${p.accent}" stop-opacity="0.3"/>
+        <stop offset="100%" stop-color="${p.accent}" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="400" height="500" fill="url(#proj-${idx})"/>
+    <rect width="400" height="500" fill="url(#light-p-${idx})"/>
+    <!-- architectural door composition -->
+    <rect x="120" y="80" width="160" height="380" fill="${p.door}" opacity="0.9"/>
+    <rect x="120" y="80" width="160" height="380" fill="none" stroke="${p.accent}" stroke-width="1" opacity="0.6"/>
+    <rect x="140" y="100" width="120" height="140" fill="none" stroke="${p.accent}" stroke-width="0.8" opacity="0.5"/>
+    <rect x="140" y="260" width="120" height="180" fill="none" stroke="${p.accent}" stroke-width="0.8" opacity="0.5"/>
+    <rect x="252" y="270" width="4" height="30" fill="${p.accent}"/>
+    <!-- horizontal molding -->
+    <line x1="0" y1="50" x2="400" y2="50" stroke="${p.accent}" stroke-width="0.5" opacity="0.3"/>
+    <line x1="0" y1="480" x2="400" y2="480" stroke="${p.accent}" stroke-width="0.5" opacity="0.3"/>
+  </svg>`;
+}
+
+/* ============ FORMATTING ============ */
+function fmt(n) {
+  return CONFIG.currency + n.toLocaleString('en-NG');
+}
+
+/* ============ CART ============ */
+let cart = [];
+try { cart = JSON.parse(localStorage.getItem('pbf_cart') || '[]'); } catch(e) { cart = []; }
+
+function saveCart() {
+  try { localStorage.setItem('pbf_cart', JSON.stringify(cart)); } catch(e){}
+  renderCartBadge();
+  renderCart();
+}
+function addToCart(id, qty = 1) {
+  const p = PRODUCTS.find(x => x.id === id);
+  if (!p) return;
+  const existing = cart.find(i => i.id === id);
+  if (existing) existing.qty += qty;
+  else cart.push({ id, qty });
+  saveCart();
+  showToast(`${p.name} added to cart`);
+}
+function updateQty(id, delta) {
+  const item = cart.find(i => i.id === id);
+  if (!item) return;
+  item.qty += delta;
+  if (item.qty <= 0) cart = cart.filter(i => i.id !== id);
+  saveCart();
+}
+function removeFromCart(id) {
+  cart = cart.filter(i => i.id !== id);
+  saveCart();
+}
+function cartTotal() {
+  return cart.reduce((s, i) => {
+    const p = PRODUCTS.find(x => x.id === i.id);
+    return s + (p ? p.price * i.qty : 0);
+  }, 0);
+}
+function renderCartBadge() {
+  const total = cart.reduce((s, i) => s + i.qty, 0);
+  const badge = document.getElementById('cartBadge');
+  badge.textContent = total;
+  badge.classList.toggle('show', total > 0);
+}
+function renderCart() {
+  const container = document.getElementById('cartItemsContainer');
+  const foot = document.getElementById('cartFoot');
+  const checkoutForm = document.getElementById('checkoutForm');
+  const checkoutBtn = document.getElementById('checkoutBtn');
+  const whatsappCheckoutBtn = document.getElementById('whatsappCheckoutBtn');
+  const backToCartBtn = document.getElementById('backToCartBtn');
+  const drawerTitle = document.getElementById('drawerTitle');
+  
+  if (cart.length === 0) {
+    container.innerHTML = `<div class="drawer__empty">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/></svg>
+      <p>Your cart is quietly waiting.</p>
+      <button class="btn btn--dark" onclick="closeAll(); navigateTo('shop')">Explore the Collection</button>
+    </div>`;
+    foot.style.display = 'none';
+    checkoutForm.classList.remove('show');
+    return;
+  }
+  
+  container.innerHTML = cart.map(i => {
+    const p = PRODUCTS.find(x => x.id === i.id);
+    if (!p) return '';
+    return `<div class="cart-item" data-cart-item>
+      <div class="cart-item__img">${doorSVG(p.door)}</div>
+      <div>
+        <div class="cart-item__name">${p.name}</div>
+        <div class="cart-item__price">${fmt(p.price)}</div>
+        <div class="cart-item__qty">
+          <button type="button" onclick="updateQty('${p.id}', -1)" aria-label="Decrease">−</button>
+          <span>${i.qty}</span>
+          <button type="button" onclick="updateQty('${p.id}', 1)" aria-label="Increase">+</button>
+        </div>
+      </div>
+      <button type="button" class="cart-item__remove" onclick="removeFromCart('${p.id}')" aria-label="Remove">Remove</button>
+    </div>`;
+  }).join('');
+  
+  foot.style.display = 'block';
+  document.getElementById('cartTotal').textContent = fmt(cartTotal());
+  checkoutBtn.style.display = 'block';
+  whatsappCheckoutBtn.style.display = 'none';
+  backToCartBtn.style.display = 'none';
+  drawerTitle.textContent = 'Your Cart';
+}
+
+/* ============ CHECKOUT FLOW ============ */
+function showCheckoutForm() {
+  const checkoutForm = document.getElementById('checkoutForm');
+  const checkoutBtn = document.getElementById('checkoutBtn');
+  const whatsappCheckoutBtn = document.getElementById('whatsappCheckoutBtn');
+  const backToCartBtn = document.getElementById('backToCartBtn');
+  const itemsContainer = document.getElementById('cartItemsContainer');
+  const cartFoot = document.getElementById('cartFoot');
+  const drawerTitle = document.getElementById('drawerTitle');
+  
+  itemsContainer.style.display = 'none';
+  cartFoot.style.display = 'block';
+  checkoutForm.classList.add('show');
+  checkoutBtn.style.display = 'none';
+  whatsappCheckoutBtn.style.display = 'flex';
+  backToCartBtn.style.display = 'block';
+  drawerTitle.textContent = 'Order Details';
+}
+
+function hideCheckoutForm() {
+  const checkoutForm = document.getElementById('checkoutForm');
+  const checkoutBtn = document.getElementById('checkoutBtn');
+  const whatsappCheckoutBtn = document.getElementById('whatsappCheckoutBtn');
+  const backToCartBtn = document.getElementById('backToCartBtn');
+  const itemsContainer = document.getElementById('cartItemsContainer');
+  const cartFoot = document.getElementById('cartFoot');
+  const drawerTitle = document.getElementById('drawerTitle');
+  
+  itemsContainer.style.display = 'block';
+  cartFoot.style.display = 'block';
+  checkoutForm.classList.remove('show');
+  checkoutBtn.style.display = 'block';
+  whatsappCheckoutBtn.style.display = 'none';
+  backToCartBtn.style.display = 'none';
+  drawerTitle.textContent = 'Your Cart';
+  
+  // Clear error messages
+  document.querySelectorAll('.form-error').forEach(e => e.classList.remove('show'));
+}
+
+function validateCheckoutForm() {
+  const form = document.getElementById('checkoutForm');
+  const required = ['fullName', 'phone', 'address', 'city', 'state'];
+  let isValid = true;
+  
+  document.querySelectorAll('.form-field.required').forEach(field => {
+    const input = field.querySelector('input, textarea');
+    const error = field.querySelector('.form-error');
+    if (!input.value.trim()) {
+      error.textContent = 'This field is required';
+      error.classList.add('show');
+      isValid = false;
+    } else {
+      error.classList.remove('show');
+    }
+  });
+  
+  // Validate email format if provided
+  const emailInput = form.querySelector('input[name="email"]');
+  if (emailInput && emailInput.value.trim()) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(emailInput.value)) {
+      const emailField = emailInput.closest('.form-field');
+      const error = emailField.querySelector('.form-error');
+      error.textContent = 'Invalid email address';
+      error.classList.add('show');
+      isValid = false;
+    }
+  }
+  
+  return isValid;
+}
+
+function generateWhatsAppMessage() {
+  const form = document.getElementById('checkoutForm');
+  const formData = new FormData(form);
+  
+  // Build order items section
+  const orderItems = cart.map(i => {
+    const p = PRODUCTS.find(x => x.id === i.id);
+    if (!p) return '';
+    const itemTotal = p.price * i.qty;
+    return `${i.qty > 1 ? i.qty + '. ' : ''}${p.name} × ${i.qty} — ${fmt(itemTotal)}`;
+  }).filter(Boolean);
+
+  const orderItemsText = orderItems.join('\n');
+  const productTotal = cartTotal();
+
+  const message = `Hello Prime Building Finishing 👋
+
+I would like to place an order.
+
+🛍️ ORDER DETAILS
+
+${orderItems.map((item, idx) => `${idx + 1}. ${item}`).join('\n')}
+
+PRODUCT TOTAL: ${fmt(productTotal)}
+
+👤 CUSTOMER DETAILS
+
+Name: ${formData.get('fullName')}
+WhatsApp: ${formData.get('phone')}
+${formData.get('email') ? `Email: ${formData.get('email')}\n` : ''}
+Delivery Address: ${formData.get('address')}
+City: ${formData.get('city')}
+State: ${formData.get('state')}
+${formData.get('instructions') ? `Delivery Instructions: ${formData.get('instructions')}\n` : ''}
+
+Please confirm product availability and the delivery fee.
+
+Thank you.`;
+
+  return message;
+}
+
+function handleCheckoutSubmit(e) {
+  e.preventDefault();
+  
+  if (!validateCheckoutForm()) {
+    showToast('Please fill in all required fields');
+    return;
+  }
+  
+  const message = generateWhatsAppMessage();
+  const whatsappUrl = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`;
+  
+  // Open WhatsApp
+  window.open(whatsappUrl, '_blank');
+  showToast('Opening WhatsApp with your order…');
+  
+  // Optional: clear cart after successful checkout
+  setTimeout(() => {
+    // Don't auto-clear cart - let user decide
+    // You can enable this if you prefer to clear after sending
+    // cart = [];
+    // saveCart();
+    // closeAll();
+  }, 1500);
+}
+
+/* ============ TOASTS ============ */
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  document.getElementById('toastMsg').textContent = msg;
+  t.classList.add('show');
+  clearTimeout(window.__toastT);
+  window.__toastT = setTimeout(() => t.classList.remove('show'), 2600);
+}
+
+/* ============ OVERLAYS ============ */
+function openCart() { openOverlay('cartDrawer'); }
+function openMenu() { openOverlay('mobileMenu'); }
+function openSearch() {
+  openOverlay('searchOverlay');
+  setTimeout(() => document.getElementById('searchInput').focus(), 300);
+}
+function openOverlay(id) {
+  document.getElementById('overlay').classList.add('open');
+  document.getElementById(id).classList.add('open');
+  document.body.classList.add('no-scroll');
+}
+function closeAll() {
+  document.getElementById('overlay').classList.remove('open');
+  ['cartDrawer','mobileMenu','searchOverlay'].forEach(id => document.getElementById(id).classList.remove('open'));
+  document.body.classList.remove('no-scroll');
+}
+
+/* ============ SEARCH ============ */
+document.getElementById('searchInput').addEventListener('input', (e) => {
+  const q = e.target.value.trim().toLowerCase();
+  const results = document.getElementById('searchResults');
+  if (!q) { results.innerHTML = ''; return; }
+  const matches = PRODUCTS.filter(p =>
+    p.name.toLowerCase().includes(q) ||
+    p.categoryLabel.toLowerCase().includes(q) ||
+    p.description.toLowerCase().includes(q)
+  );
+  if (matches.length === 0) {
+    results.innerHTML = `<div class="search-empty">No products found for "${e.target.value}"</div>`;
+    return;
+  }
+  results.innerHTML = `<div class="search-results__title">${matches.length} Result${matches.length > 1 ? 's' : ''}</div>` +
+    matches.slice(0, 6).map(p => `
+      <div class="search-result" onclick="closeAll(); navigateTo('product', {id: '${p.id}'})">
+        <div class="search-result__img">${doorSVG(p.door)}</div>
+        <div>
+          <div class="search-result__name">${p.name}</div>
+          <div class="search-result__cat">${p.categoryLabel}</div>
+        </div>
+        <div class="search-result__price">${fmt(p.price)}</div>
+      </div>
+    `).join('');
+});
+
+/* ============ PAGE TEMPLATES ============ */
+const Pages = {
+  home() {
+    const bestSellers = PRODUCTS.slice(0, 4);
+    const newArrivals = PRODUCTS.filter(p => p.tag === 'NEW' || p.id === 'p07' || p.id === 'p02').slice(0, 4);
+    const paddedNew = newArrivals.length < 4 ? [...newArrivals, ...PRODUCTS.slice(0, 4 - newArrivals.length)] : newArrivals;
+
+    return `
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero__grid">
+          <div class="hero__text">
+            <span class="eyebrow">Est. Lagos • Nigeria</span>
+            <h1 class="hero__title">Doors that <em>define</em><br>the homes we return to.</h1>
+            <p class="hero__desc">Security doors, Luxury doors, Turkey doors, Armored doors, Bullet Proof Doors, Steel Doors, Caste doors, Aluminum Doors, and Premium Home Finishing — Sourced for Nigeria Prime Homes.</p>
+            <div class="hero__cta">
+              <button class="btn btn--primary" onclick="navigateTo('shop')">Explore the Collection</button>
+              <button class="btn btn--outline-light" onclick="navigateTo('contact')">Book a Consultation</button>
+            </div>
+            <div class="hero__meta">
+              <div class="hero__meta-item">
+                <span class="num">500+</span>
+                <span class="lbl">Homes Finished</span>
+              </div>
+              <div class="hero__meta-item">
+                <span class="num">36</span>
+                <span class="lbl">States Delivered</span>
+              </div>
+              <div class="hero__meta-item">
+                <span class="num">10<span style="font-size:0.6em">yr</span></span>
+                <span class="lbl">Craftsmanship</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero__visual">
+            <span class="hero__badge">Signature Collection</span>
+            <div class="hero__visual-frame"></div>
+            <div class="hero__visual-inner">
+              <img src="turkey-door.jpg" alt="Premium Turkey Door - Signature Collection" style="width: 100%; height: 100%; object-fit: cover; border-radius: 4px;">
+              <div class="hero__floor"></div>
+              <div class="hero__light"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CATEGORIES ============ -->
+    <section class="categories">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Our Collections</span>
+          <h2 class="section-title">Crafted for Every Threshold</h2>
+          <p class="section-sub center">From commanding entrances to the finishing touch on a private study — a considered selection for every room in the home.</p>
+        </div>
+        <div class="cat-grid">
+          ${CATEGORIES.map(c => `
+            <div class="cat-card" onclick="navigateTo('shop', {cat: '${c.key}'})">
+              <div class="cat-card__bg">${categorySVG(c.key)}</div>
+              <div class="cat-card__overlay"></div>
+              <div class="cat-card__content">
+                <div class="cat-card__label">${c.tagline}</div>
+                <div class="cat-card__title">${c.label}</div>
+                <div class="cat-card__link">Explore <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NEW ARRIVALS ============ -->
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Just Arrived</span>
+          <h2 class="section-title">New This Season</h2>
+          <p class="section-sub center">Freshly received pieces from our latest atelier collection.</p>
+        </div>
+        <div class="products-grid">
+          ${paddedNew.map(p => productCardHTML(p)).join('')}
+        </div>
+        <div style="text-align:center; margin-top:50px;">
+          <button class="btn btn--outline" onclick="navigateTo('shop')">View Full Collection</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="story">
+      <div class="container">
+        <div class="story__grid">
+          <div class="story__visual">
+            <div class="story__visual-inner">
+              <div class="story__door"></div>
+            </div>
+            <div class="story__accent"></div>
+          </div>
+          <div class="story__text">
+            <span class="eyebrow">Our Craft</span>
+            <h2 class="section-title">A Door is the First Word a Home Speaks.</h2>
+            <p>Since our founding in Lagos, Prime Building Finishing has helped families, architects and developers dress their homes with doors and finishing that hold up to years of use — and still feel new.</p>
+            <p>We source solid hardwoods, engineered composites, and hand-forged hardware from trusted mills. Every piece we sell is one we would put in our own home.</p>
+            <p class="story__signature">— Prime Building Finishing, Orile</p>
+            <button class="btn btn--outline" onclick="navigateTo('about')">Read Our Story</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BESTSELLERS ============ -->
+    <section style="background: var(--color-ivory);">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Signature Selection</span>
+          <h2 class="section-title">Loved in Nigerian Homes</h2>
+          <p class="section-sub center">The pieces our clients order again — and recommend to their architects.</p>
+        </div>
+        <div class="products-grid">
+          ${bestSellers.map(p => productCardHTML(p)).join('')}
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY US ============ -->
+    <section class="why">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why Prime</span>
+          <h2 class="section-title">The Details That Set a Home Apart</h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 2 4 6v6c0 5.5 3.8 10.7 8 12 4.2-1.3 8-6.5 8-12V6l-8-4z"/></svg>
+            </div>
+            <h3>Certified Quality</h3>
+            <p>Every door is inspected against our finishing standard before it leaves the workshop.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="3" y="8" width="18" height="12" rx="1"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></svg>
+            </div>
+            <h3>Secure by Design</h3>
+            <p>Our security doors ship with multi-point locks and armoured hinges as standard.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 4h14l-2 5H7L5 4z"/><path d="M9 4v16M15 4v16"/></svg>
+            </div>
+            <h3>Skilled Installation</h3>
+            <p>Trained fitters across Lagos and Abuja — your door arrives, is fitted, and is ready.</p>
+          </div>
+          <div class="why-item">
+            <div class="why-item__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 9l4-5h10l4 5-9 12L3 9z"/><path d="M3 9h18M7 4l5 5 5-5"/></svg>
+            </div>
+            <h3>Nationwide Delivery</h3>
+            <p>From Lagos to Port Harcourt to Abuja — we ship to every state in Nigeria.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Recent Work</span>
+          <h2 class="section-title">Homes We've Dressed</h2>
+          <p class="section-sub center">A quiet look at some of the residences we've had the privilege of finishing.</p>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-card__bg">${projectSVG(0)}</div>
+            <div class="project-card__overlay"></div>
+            <div class="project-card__content">
+              <div class="project-card__loc">Ikoyi, Lagos</div>
+              <div class="project-card__title">Villa Aurelio — Grand Entrance</div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__bg">${projectSVG(1)}</div>
+            <div class="project-card__overlay"></div>
+            <div class="project-card__content">
+              <div class="project-card__loc">Maitama, Abuja</div>
+              <div class="project-card__title">Executive Residence — Full Interior</div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-card__bg">${projectSVG(2)}</div>
+            <div class="project-card__overlay"></div>
+            <div class="project-card__content">
+              <div class="project-card__loc">Lekki Phase 1</div>
+              <div class="project-card__title">Contemporary Villa — Pivot Doors</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONSULTATION ============ -->
+    <section class="consultation">
+      <div class="container">
+        <div class="consultation__grid">
+          <div>
+            <span class="eyebrow eyebrow--light">Book a Consultation</span>
+            <h2>Speak with our team about your project.</h2>
+            <p>Whether you're finishing one home or a multi-unit development, we'll advise on the right doors, hardware, and finishing — and quote clearly on delivery and installation.</p>
+            <div class="consultation__contact-list">
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <div class="contact-item__label">Call</div>
+                  <div class="contact-item__value"><a href="tel:+2347039863622">+234 703 986 3622</a></div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <div class="contact-item__label">Email</div>
+                  <div class="contact-item__value"><a href="mailto:ighosotub@gmail.com">ighosotub@gmail.com</a></div>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-item__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <div class="contact-item__label">Showroom</div>
+                  <div class="contact-item__value">Orile, Lagos</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="consultation__form" onsubmit="handleContactForm(event)">
+            <div class="form-row">
+              <div class="form-field"><input type="text" name="name" placeholder="Full name" required></div>
+              <div class="form-field"><input type="tel" name="phone" placeholder="Phone number" required></div>
+            </div>
+            <div class="form-field"><input type="email" name="email" placeholder="Email address" required></div>
+            <div class="form-field">
+              <select name="interest" required>
+                <option value="">I'm interested in…</option>
+                <option>Entrance Doors</option>
+                <option>Interior Doors</option>
+                <option>Security Doors</option>
+                <option>Hardware & Handles</option>
+                <option>Full Home Finishing</option>
+                <option>Developer / Bulk Project</option>
+              </select>
+            </div>
+            <div class="form-field"><textarea name="message" placeholder="Tell us about your project…" required></textarea></div>
+            <button type="submit" class="btn btn--primary" style="width:100%;">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">In Our Clients' Words</span>
+          <h2 class="section-title">Trusted by Homes Across Nigeria</h2>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card">
+            <div class="testi-card__stars">★ ★ ★ ★ ★</div>
+            <p class="testi-card__text">"Your review could be here — replace this placeholder with a real testimonial once you receive your first reviews."</p>
+            <div class="testi-card__author">
+              <div class="testi-card__name">Client Name</div>
+              <div class="testi-card__role">Location, Nigeria</div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-card__stars">★ ★ ★ ★ ★</div>
+            <p class="testi-card__text">"Your review could be here — a place for a real client's words about doors, finishing or service."</p>
+            <div class="testi-card__author">
+              <div class="testi-card__name">Client Name</div>
+              <div class="testi-card__role">Location, Nigeria</div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-card__stars">★ ★ ★ ★ ★</div>
+            <p class="testi-card__text">"Your review could be here — swap this out with genuine feedback from a completed project."</p>
+            <div class="testi-card__author">
+              <div class="testi-card__name">Client Name</div>
+              <div class="testi-card__role">Location, Nigeria</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="final-cta">
+      <div class="container">
+        <div class="final-cta__inner">
+          <span class="eyebrow eyebrow--light">Ready When You Are</span>
+          <h2>Beautiful doors. <em>Built to last.</em></h2>
+          <p>From your first enquiry to the final installation — one team, one standard, one door at a time.</p>
+          <div class="final-cta__buttons">
+            <button class="btn btn--primary" onclick="navigateTo('shop')">Shop the Collection</button>
+            <a class="btn btn--outline-light" href="https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.whatsappMessage)}" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    `;
+  },
+
+  shop(params = {}) {
+    const cat = params.cat || 'all';
+    const list = cat === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.category === cat);
+    const activeCat = CATEGORIES.find(c => c.key === cat);
+    return `
+    <div class="page-header">
+      <div class="container">
+        <span class="eyebrow">${activeCat ? activeCat.tagline : 'The Collection'}</span>
+        <h1>${activeCat ? activeCat.label : 'Our Collection'}</h1>
+        <p>${activeCat ? 'Considered pieces from our ' + activeCat.label.toLowerCase() + ' selection.' : 'The full Prime Building Finishing catalogue — doors, hardware and finishing.'}</p>
+        <div class="breadcrumb">
+          <a href="#/home" onclick="return navigateTo('home')">Home</a>
+          <span class="sep">/</span>
+          <span>${activeCat ? activeCat.label : 'Collection'}</span>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="shop-layout">
+        <aside class="shop-filters">
+          <div class="filter-group">
+            <h4>Categories</h4>
+            <ul>
+              <li class="${cat === 'all' ? 'active' : ''}" onclick="navigateTo('shop')">All Doors <span class="count">${PRODUCTS.length}</span></li>
+              ${CATEGORIES.map(c => `
+                <li class="${cat === c.key ? 'active' : ''}" onclick="navigateTo('shop', {cat: '${c.key}'})">${c.label} <span class="count">${PRODUCTS.filter(p => p.category === c.key).length}</span></li>
+              `).join('')}
+            </ul>
+          </div>
+          <div class="filter-group">
+            <h4>Price</h4>
+            <ul>
+              <li>Under ₦300,000</li>
+              <li>₦300,000 – ₦700,000</li>
+              <li>₦700,000 – ₦1,500,000</li>
+              <li>Above ₦1,500,000</li>
+            </ul>
+          </div>
+          <div class="filter-group">
+            <h4>Need help?</h4>
+            <p style="color: var(--color-text-muted); font-size: 14px; margin-bottom: 16px; line-height: 1.7;">Speak to our team about custom sizes, developer pricing, or bulk orders.</p>
+            <a href="https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.whatsappMessage)}" target="_blank" class="btn btn--outline" style="width:100%;">WhatsApp Us</a>
+          </div>
+        </aside>
+        <div class="shop-main">
+          <div class="shop-main__head">
+            <div class="shop-main__count">Showing <strong>${list.length}</strong> ${list.length === 1 ? 'product' : 'products'}</div>
+            <div class="shop-main__sort">
+              <select onchange="sortProducts(this.value)">
+                <option value="featured">Sort: Featured</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name">Name: A – Z</option>
+              </select>
+            </div>
+          </div>
+          <div class="products-grid" id="shopGrid">
+            ${list.map(p => productCardHTML(p)).join('')}
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+  },
+
+  product(params = {}) {
+    const p = PRODUCTS.find(x => x.id === params.id);
+    if (!p) return `<div class="container" style="padding: 100px 0; text-align:center;"><h1>Product not found</h1><button class="btn btn--dark" onclick="navigateTo('shop')" style="margin-top:20px;">Back to shop</button></div>`;
+    const related = PRODUCTS.filter(x => x.category === p.category && x.id !== p.id).slice(0, 4);
+    const waMsg = `Hi Prime Building Finishing! I'd like to know more about the ${p.name} (${fmt(p.price)}). Is it available?`;
+    return `
+    <div class="pdp">
+      <div class="container">
+        <div class="breadcrumb" style="justify-content: flex-start; margin: 0 0 30px;">
+          <a href="#/home" onclick="return navigateTo('home')">Home</a>
+          <span class="sep">/</span>
+          <a href="#/shop" onclick="return navigateTo('shop')">Collection</a>
+          <span class="sep">/</span>
+          <a href="#/shop/${p.category}" onclick="return navigateTo('shop', {cat: '${p.category}'})">${p.categoryLabel}</a>
+          <span class="sep">/</span>
+          <span>${p.name}</span>
+        </div>
+        <div class="pdp-grid">
+          <div class="pdp__gallery">
+            <div class="pdp__main-img" id="pdpMainImg">${doorSVG(p.door, { w: 600, h: 800 })}</div>
+            <div class="pdp__thumbs">
+              <div class="pdp__thumb active">${doorSVG(p.door)}</div>
+              <div class="pdp__thumb">${doorSVG(p.door)}</div>
+              <div class="pdp__thumb">${doorSVG(p.door)}</div>
+              <div class="pdp__thumb">${doorSVG(p.door)}</div>
+            </div>
+          </div>
+          <div class="pdp__info">
+            <div class="pdp__cat">${p.categoryLabel}</div>
+            <h1 class="pdp__name">${p.name}</h1>
+            <div class="pdp__price">${fmt(p.price)}</div>
+            <div class="pdp__stock">In stock — ships nationwide</div>
+            <div class="pdp__desc">${p.description}</div>
+            <div class="pdp__specs">
+              <h4>Product Details</h4>
+              <ul>
+                ${p.features.map(f => `<li><strong>✓</strong> <span>${f}</span></li>`).join('')}
+              </ul>
+            </div>
+            <div class="pdp__actions">
+              <div class="pdp__qty">
+                <button onclick="pdpQty(-1)">−</button>
+                <span id="pdpQtyVal">1</span>
+                <button onclick="pdpQty(1)">+</button>
+              </div>
+              <button class="btn btn--dark" onclick="addToCart('${p.id}', parseInt(document.getElementById('pdpQtyVal').textContent))">Add to Cart</button>
+            </div>
+            <a href="https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(waMsg)}" target="_blank" class="pdp__wa">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.65-.94-2.25-.24-.6-.5-.5-.68-.5-.17-.02-.37-.02-.57-.02-.2 0-.53.08-.8.38-.28.3-1.06 1.03-1.06 2.53s1.08 2.94 1.23 3.14c.15.2 2.13 3.25 5.16 4.55.72.32 1.28.5 1.73.65.72.23 1.38.2 1.9.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35zM12 2a10 10 0 0 0-8.55 15.15L2 22l4.98-1.3A10 10 0 1 0 12 2z"/></svg>
+              Enquire on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    ${related.length > 0 ? `
+    <section style="background: var(--color-ivory);">
+      <div class="container">
+        <div class="section-head"><span class="eyebrow">You May Also Like</span><h2 class="section-title" style="font-size: 2.5rem;">More from ${p.categoryLabel}</h2></div>
+        <div class="products-grid">
+          ${related.map(rp => productCardHTML(rp)).join('')}
+        </div>
+      </div>
+    </section>
+    ` : ''}
+    `;
+  },
+
+  about() {
+    return `
+    <div class="page-header">
+      <div class="container">
+        <span class="eyebrow">Our Story</span>
+        <h1>Built on Craftsmanship.</h1>
+        <p>Prime Building Finishing is a Lagos-based specialist in luxury doors and premium home finishing — trusted by Nigerian families, developers, and architects.</p>
+      </div>
+    </div>
+    <section class="about-hero">
+      <div class="container">
+        <div class="about-hero__grid">
+          <div>
+            <span class="eyebrow">Founded in Lagos</span>
+            <h2 class="section-title" style="margin: 20px 0 30px;">Beautiful doors. Built to last a generation.</h2>
+            <p style="color: var(--color-text-muted); line-height: 1.9; margin-bottom: 20px;">Prime Building Finishing was founded in Orile, Lagos with a simple belief: the doors and finishing of a home should feel as considered as the architecture that holds them.</p>
+            <p style="color: var(--color-text-muted); line-height: 1.9; margin-bottom: 20px;">Over the years we've grown from a single showroom into a trusted partner for the country's most discerning homeowners, developers and interior designers. Our doors sit in homes across Ikoyi, Maitama, Lekki, Enugu, Port Harcourt and beyond.</p>
+            <p style="color: var(--color-text-muted); line-height: 1.9; margin-bottom: 30px;">We source from mills that share our standards. We finish with care. And we install with the same attention we'd bring to our own home.</p>
+            <button class="btn btn--dark" onclick="navigateTo('contact')">Visit our Showroom</button>
+          </div>
+          <div class="about-hero__visual">
+            <div style="position:absolute; inset:0;">${doorSVG('grand', { w: 500, h: 500 })}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-values">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What We Stand For</span>
+          <h2 class="section-title">Three commitments, kept.</h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-item">
+            <div class="num">01</div>
+            <h3>Considered Selection</h3>
+            <p>We stock what we would put in our own homes. Every door in our collection is chosen for how it looks, how it feels, and how it will hold up.</p>
+          </div>
+          <div class="value-item">
+            <div class="num">02</div>
+            <h3>Honest Craftsmanship</h3>
+            <p>Solid materials, proper fittings, real installation. No shortcuts on the parts you'll live with every day.</p>
+          </div>
+          <div class="value-item">
+            <div class="num">03</div>
+            <h3>Care After the Sale</h3>
+            <p>Our relationship with a client doesn't end at delivery. Adjustments, refits, spares — we're here when you need us.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="final-cta">
+      <div class="container">
+        <div class="final-cta__inner">
+          <span class="eyebrow eyebrow--light">Come See in Person</span>
+          <h2>Visit our <em>Orile showroom</em>.</h2>
+          <p>See the finishes, feel the weight, and talk through your project with our team.</p>
+          <div class="final-cta__buttons">
+            <button class="btn btn--primary" onclick="navigateTo('contact')">Get Directions</button>
+            <a class="btn btn--outline-light" href="tel:+2347039863622">Call Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    `;
+  },
+
+  contact() {
+    return `
+    <div class="page-header">
+      <div class="container">
+        <span class="eyebrow">Get in Touch</span>
+        <h1>Let's Talk About Your Project.</h1>
+        <p>Whether it's a single door or a full home finishing project, we'd love to hear from you.</p>
+      </div>
+    </div>
+    <section class="contact-page">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Speak with our team.</h2>
+            <p>Our team is available Monday to Saturday. For fastest reply, message us on WhatsApp.</p>
+            <div class="contact-item">
+              <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div>
+                <div class="contact-item__label">Call</div>
+                <div class="contact-item__value"><a href="tel:+2347039863622">+234 703 986 3622</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.28-.1-.48-.15-.68.15-.2.3-.78.97-.96 1.17-.18.2-.35.22-.65.08-.3-.15-1.27-.47-2.42-1.5-.9-.8-1.5-1.78-1.67-2.08-.18-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.68-1.65-.94-2.25-.24-.6-.5-.5-.68-.5-.17-.02-.37-.02-.57-.02-.2 0-.53.08-.8.38-.28.3-1.06 1.03-1.06 2.53s1.08 2.94 1.23 3.14c.15.2 2.13 3.25 5.16 4.55.72.32 1.28.5 1.73.65.72.23 1.38.2 1.9.12.58-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35zM12 2a10 10 0 0 0-8.55 15.15L2 22l4.98-1.3A10 10 0 1 0 12 2z"/></svg></div>
+              <div>
+                <div class="contact-item__label">WhatsApp</div>
+                <div class="contact-item__value"><a href="https://wa.me/2347039863622" target="_blank">+234 703 986 3622</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div>
+                <div class="contact-item__label">Email</div>
+                <div class="contact-item__value"><a href="mailto:ighosotub@gmail.com">ighosotub@gmail.com</a></div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div>
+                <div class="contact-item__label">Showroom</div>
+                <div class="contact-item__value">Orile, Lagos, Nigeria</div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg></div>
+              <div>
+                <div class="contact-item__label">Hours</div>
+                <div class="contact-item__value">Mon – Sat: 9am – 6pm<br><span style="color:var(--color-text-muted); font-weight:400;">Sunday: By appointment</span></div>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" onsubmit="handleContactForm(event)">
+            <h3>Send a Message</h3>
+            <p class="small">We reply within one business day.</p>
+            <div class="form-row">
+              <div class="form-field"><input type="text" name="name" placeholder="Full name" required></div>
+              <div class="form-field"><input type="tel" name="phone" placeholder="Phone number" required></div>
+            </div>
+            <div class="form-field"><input type="email" name="email" placeholder="Email address" required></div>
+            <div class="form-field">
+              <select name="interest" required>
+                <option value="">What can we help with?</option>
+                <option>Product Enquiry</option>
+                <option>Custom Order</option>
+                <option>Bulk / Developer Order</option>
+                <option>Installation Booking</option>
+                <option>General Question</option>
+              </select>
+            </div>
+            <div class="form-field"><textarea name="message" placeholder="Tell us a little about your project…" required></textarea></div>
+            <button type="submit" class="btn btn--primary" style="width:100%;">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    `;
+  },
+
+  faq() {
+    const items = [
+      { q: 'Do you deliver outside Lagos?', a: 'Yes. We deliver nationwide across all 36 states in Nigeria. Delivery fees vary by location and size of the order and are confirmed at checkout or via WhatsApp.' },
+      { q: 'Do you offer installation?', a: 'Yes. We have trained installers in Lagos and Abuja, and partner with vetted fitters in other major cities. Installation is priced separately per door.' },
+      { q: 'Can I customise a door — sizes, colours, finishes?', a: 'Most doors in our collection can be customised. Send us your requirements via WhatsApp or the contact form and we\'ll come back with options and lead times.' },
+      { q: 'What are your payment options?', a: 'We accept bank transfer, POS, and cash payments at our Orile showroom. Online payment integration (Paystack/Flutterwave) can be enabled at checkout.' },
+      { q: 'How long does delivery take?', a: 'In-stock items ship within 3–5 working days in Lagos, and 5–10 working days nationwide. Custom orders typically ship in 3–6 weeks depending on specification.' },
+      { q: 'Do you work with developers and contractors?', a: 'Yes — we regularly supply doors and finishing to developers, hotels and commercial projects, with tiered pricing for bulk orders. Contact us for a project quote.' },
+      { q: 'What warranty do you offer?', a: 'All doors carry a minimum 2-year manufacturer\'s warranty against manufacturing defects. Hardware carries individual warranties as specified per product.' },
+      { q: 'Can I visit your showroom before ordering?', a: 'Absolutely — and we recommend it. Our Orile showroom is open Monday to Saturday. Call ahead if you\'d like a specific team member to be available.' }
+    ];
+    return `
+    <div class="page-header">
+      <div class="container">
+        <span class="eyebrow">Questions Answered</span>
+        <h1>Frequently Asked.</h1>
+        <p>Everything you need to know about ordering, delivery, installation and after-care.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="faq-list">
+        ${items.map((f, i) => `
+          <div class="faq-item" id="faq-${i}">
+            <button class="faq-q" onclick="toggleFaq(${i})">
+              <span>${f.q}</span>
+              <span class="plus">+</span>
+            </button>
+            <div class="faq-a"><p>${f.a}</p></div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+    `;
+  },
+
+  delivery() {
+    return `
+    <div class="page-header">
+      <div class="container">
+        <span class="eyebrow">Getting It to You</span>
+        <h1>Delivery & Installation.</h1>
+        <p>How your order gets from our Lagos workshop to your home — beautifully, and on time.</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="legal">
+        <h2>Delivery Zones</h2>
+        <p>We deliver nationwide across all 36 states in Nigeria. Standard delivery zones:</p>
+        <ul>
+          <li><strong>Lagos mainland & island:</strong> 3–5 working days</li>
+          <li><strong>Abuja & major cities:</strong> 5–7 working days</li>
+          <li><strong>Other states:</strong> 7–12 working days</li>
+        </ul>
+        <h2>Delivery Fees</h2>
+        <p>Delivery is quoted based on your location and the size of your order. For deliveries within Lagos, our team can typically deliver same-week for in-stock items. Nationwide deliveries are dispatched via trusted logistics partners.</p>
+        <h2>Installation</h2>
+        <p>We offer professional installation with our own team in Lagos and Abuja. For other cities, we partner with vetted local installers or can guide your fitter through the specifications.</p>
+        <p>Installation is priced separately per door based on complexity — a standard interior door is quicker to fit than a full pivot or double-leaf entrance.</p>
+        <h2>What to Expect on Delivery Day</h2>
+        <ul>
+          <li>Our team will call ahead to confirm the arrival window.</li>
+          <li>Every door is inspected before it leaves our workshop and again on arrival.</li>
+          <li>If installation is booked, our fitters arrive with all necessary tools and fixings.</li>
+          <li>Packaging is removed and disposed of by our team.</li>
+        </ul>
+        <h2>Custom & Bulk Orders</h2>
+        <p>For custom sizes, finishes, or bulk developer orders, lead times typically range from 3 to 6 weeks depending on specification. Get in touch for a project timeline.</p>
+      </div>
+    </div>
+    `;
+  },
+
+  returns() {
+    return `
+    <div class="page-header">
+      <div class="container">
+        <span class="eyebrow">Our Promise</span>
+        <h1>Returns & Warranty.</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="legal">
+        <h2>Our Approach</h2>
+        <p>Because most of our doors are made to order or custom-sized, we handle returns slightly differently to a typical online store. Our commitment: if there is a manufacturing defect, a shipping fault, or a mistake on our side — we make it right.</p>
+        <h2>Manufacturing Defects</h2>
+        <p>Every door carries a minimum 2-year warranty against manufacturing defects. If you notice an issue, please contact us within 7 days of delivery with clear photos, and we will repair or replace the door at no cost.</p>
+        <h2>Shipping Damage</h2>
+        <p>Inspect all deliveries carefully before signing. If a door has been damaged in transit, note it on the delivery receipt and contact us within 48 hours. We will handle the replacement.</p>
+        <h2>Change of Mind</h2>
+        <p>For in-stock, non-custom items, returns are accepted within 7 days of delivery — provided the item is in original condition and packaging. A restocking fee of 15% may apply, and delivery costs are non-refundable.</p>
+        <h2>Custom Orders</h2>
+        <p>Custom-sized, bespoke-finished, or made-to-order items cannot be returned unless there is a manufacturing defect. We confirm all specifications in writing before starting a custom order.</p>
+        <h2>How to Reach Us</h2>
+        <p>For any warranty claim or return request, contact us on <a href="https://wa.me/2347039863622" target="_blank" style="color: var(--color-gold);">WhatsApp</a>, call <a href="tel:+2347039863622" style="color: var(--color-gold);">+234 703 986 3622</a>, or email <a href="mailto:ighosotub@gmail.com" style="color: var(--color-gold);">ighosotub@gmail.com</a>.</p>
+      </div>
+    </div>
+    `;
+  },
+
+  privacy() {
+    return `
+    <div class="page-header"><div class="container"><span class="eyebrow">Legal</span><h1>Privacy Policy.</h1></div></div>
+    <div class="container"><div class="legal">
+      <p><em>Last updated: January 2026</em></p>
+      <h2>What We Collect</h2>
+      <p>When you place an order or contact us, we collect basic information needed to process your enquiry: name, phone number, email address, delivery address, and order details.</p>
+      <h2>How We Use It</h2>
+      <ul>
+        <li>To fulfil your order and arrange delivery.</li>
+        <li>To respond to your enquiries.</li>
+        <li>Occasionally, to share new arrivals or offers — only if you've opted in.</li>
+      </ul>
+      <h2>Who Sees It</h2>
+      <p>Your information is used only by Prime Building Finishing and, where necessary, our delivery partners. We never sell your data to third parties.</p>
+      <h2>Cookies</h2>
+      <p>This website uses local browser storage to remember your shopping cart across visits. No tracking cookies are set without your consent.</p>
+      <h2>Your Rights</h2>
+      <p>You can request a copy of any personal information we hold about you, or ask us to delete it, by contacting us at ighosotub@gmail.com.</p>
+    </div></div>
+    `;
+  },
+
+  terms() {
+    return `
+    <div class="page-header"><div class="container"><span class="eyebrow">Legal</span><h1>Terms & Conditions.</h1></div></div>
+    <div class="container"><div class="legal">
+      <p><em>Last updated: January 2026</em></p>
+      <h2>Ordering</h2>
+      <p>All orders are confirmed once payment (or agreed deposit for custom orders) has been received. Prices are quoted in Nigerian Naira and are inclusive of applicable VAT unless stated otherwise.</p>
+      <h2>Pricing</h2>
+      <p>Prices displayed on our website are indicative and may vary depending on customisation, delivery location, and installation requirements. Final pricing is confirmed at checkout or in writing.</p>
+      <h2>Delivery</h2>
+      <p>Delivery timelines are estimates. We are not liable for delays caused by third-party logistics, weather, or force majeure events. See our Delivery page for full details.</p>
+      <h2>Installation</h2>
+      <p>Installation quotes are separate from product pricing and are provided based on site inspection or your specifications. It is the client's responsibility to ensure the installation area is prepared.</p>
+      <h2>Warranty</h2>
+      <p>All doors carry a manufacturer's warranty against defects. See our Returns page for full terms.</p>
+      <h2>Liability</h2>
+      <p>Our liability is limited to the value of the goods supplied. We are not responsible for consequential losses.</p>
+      <h2>Governing Law</h2>
+      <p>These terms are governed by the laws of the Federal Republic of Nigeria.</p>
+    </div></div>
+    `;
+  }
+};
+
+/* Product card renderer */
+function productCardHTML(p) {
+  const tagClass = p.tagStyle === 'gold' ? ' product-card__tag--gold' : '';
+  return `
+    <div class="product-card" onclick="navigateTo('product', {id: '${p.id}'})">
+      <div class="product-card__img">
+        ${p.tag ? `<span class="product-card__tag${tagClass}">${p.tag}</span>` : ''}
+        ${doorSVG(p.door)}
+        <div class="product-card__quick">View Details</div>
+      </div>
+      <div class="product-card__cat">${p.categoryLabel}</div>
+      <div class="product-card__name">${p.name}</div>
+      <div class="product-card__price">${fmt(p.price)}</div>
+    </div>`;
+}
+
+/* Sort products (shop page) */
+function sortProducts(mode) {
+  const grid = document.getElementById('shopGrid');
+  if (!grid) return;
+  const params = parseHash();
+  const cat = params.data.cat || 'all';
+  let list = cat === 'all' ? [...PRODUCTS] : PRODUCTS.filter(p => p.category === cat);
+  if (mode === 'price-asc') list.sort((a, b) => a.price - b.price);
+  if (mode === 'price-desc') list.sort((a, b) => b.price - a.price);
+  if (mode === 'name') list.sort((a, b) => a.name.localeCompare(b.name));
+  grid.innerHTML = list.map(p => productCardHTML(p)).join('');
+}
+
+/* FAQ toggle */
+function toggleFaq(i) {
+  const el = document.getElementById('faq-' + i);
+  el.classList.toggle('open');
+}
+
+/* PDP quantity */
+function pdpQty(delta) {
+  const el = document.getElementById('pdpQtyVal');
+  let n = parseInt(el.textContent) + delta;
+  if (n < 1) n = 1;
+  el.textContent = n;
+}
+
+/* Contact form handler — sends via WhatsApp for now */
+function handleContactForm(e) {
+  e.preventDefault();
+  const f = new FormData(e.target);
+  const msg = `Hi Prime Building Finishing! New enquiry:%0A%0AName: ${f.get('name')}%0APhone: ${f.get('phone')}%0AEmail: ${f.get('email')}%0AInterest: ${f.get('interest')}%0A%0AMessage: ${f.get('message')}`;
+  window.open(`https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(f.get('message') ? msg : CONFIG.whatsappMessage)}`, '_blank');
+  showToast('Opening WhatsApp with your enquiry…');
+  e.target.reset();
+}
+
+/* ============ ROUTING ============ */
+function parseHash() {
+  const h = window.location.hash.replace(/^#\/?/, '') || 'home';
+  const parts = h.split('/');
+  const page = parts[0] || 'home';
+  const data = {};
+  if (page === 'shop' && parts[1]) data.cat = parts[1];
+  if (page === 'product' && parts[1]) data.id = parts[1];
+  return { page, data };
+}
+
+function navigateTo(page, data = {}) {
+  let hash = '#/' + page;
+  if (page === 'shop' && data.cat) hash += '/' + data.cat;
+  if (page === 'product' && data.id) hash += '/' + data.id;
+  window.location.hash = hash;
+  return false;
+}
+
+function render() {
+  const { page, data } = parseHash();
+  const app = document.getElementById('app');
+  const fn = Pages[page];
+  if (fn) {
+    app.innerHTML = fn(data);
+    app.classList.remove('fade-in');
+    void app.offsetWidth;
+    app.classList.add('fade-in');
+  } else {
+    app.innerHTML = `<div class="container" style="padding:100px 0; text-align:center;">
+      <h1>Page not found</h1>
+      <button class="btn btn--dark" onclick="navigateTo('home')" style="margin-top:20px;">Go Home</button>
+    </div>`;
+  }
+
+  // Update active nav
+  document.querySelectorAll('.nav a').forEach(a => {
+    a.classList.toggle('active', a.dataset.page === page);
+  });
+  document.querySelectorAll('.mobile-menu__nav a').forEach(a => {
+    a.classList.remove('active');
+  });
+
+  // Scroll to top on page change
+  window.scrollTo(0, 0);
+}
+
+/* Hamburger & scroll */
+document.getElementById('hamburger').addEventListener('click', openMenu);
+window.addEventListener('scroll', () => {
+  document.getElementById('header').classList.toggle('scrolled', window.scrollY > 20);
+});
+window.addEventListener('hashchange', render);
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeAll(); });
+
+/* WhatsApp float link */
+document.getElementById('waFloat').href = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`;
+
+/* Initial render */
+renderCartBadge();
+renderCart();
+render();
+</script>
+
+</body>
+</html>
